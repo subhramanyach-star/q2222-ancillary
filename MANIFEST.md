@@ -1,8 +1,8 @@
-# Manifest of computer-assisted checks
+# Manifest of checks
 
-This file maps the computer-assisted statements of the accompanying paper to the verifier, the certificate files, and the expected output. Run each command from the root of the repository unless a row says otherwise. A check has succeeded only if the process exits with status 0 and prints the stated marker.
+This file maps the statements of the accompanying paper that are supported by a shipped script to the command, its inputs, and the expected output. Run each command from the root of the repository unless a row says otherwise. A check has succeeded only if the process exits with status 0 and prints the stated marker.
 
-The normal-cone construction, the exact quantum-bound formula, the necessary condition for certified-randomness maxima, the reduction of the loss model to two-qubit strategies, and the canonical CHSH maximum under equal-efficiency loss are proved in the paper and have no computer-assisted step here.
+The normal-cone construction, the exact quantum-bound formula, the supporting quadrilateral of the I_δ family, the necessary condition for certified-randomness maxima, the reduction of the loss model to two-qubit strategies, and the canonical CHSH maximum under equal-efficiency loss are proved in the paper. The I_δ script checks the exact identities of that proof; it is not a computer-assisted existence argument. The detection-loss and CHSH-variant statements below are computer-assisted and are checked by the remaining verifiers.
 
 ## Detection loss
 
@@ -30,17 +30,10 @@ The six-decimal selected-expression intervals in the paper, whose upper ends are
 
 These are intervals for the selected-expression guessing problem, under the loss model stated in the paper.
 
-## Tilted-CHSH supporting polygons
+## I_δ supporting quadrilateral
 
-The theorem on Bell tests maximized by tilted-CHSH sources is checked in three parts: exact identities for the vertex formulae (including the closed-form \(V_2,V_4\) bounds and the comparison with the Tsirelson octagon at maximal entanglement); exact endpoint identities; and a ball-arithmetic cover of the overlap interval. Run these commands in the directory named in the first column.
+The vertices, multipliers, and local margins of the supporting quadrilateral at every behaviour of the I_δ family are derived by exact algebra in the paper. The following command re-derives those closed forms and checks the identities used in the appendix. It is a check of exact algebra, not a computer-assisted existence proof.
 
-| Directory | Command | Expected output |
-|---|---|---|
-| `tsirelson_octagon/` | `python3 exact_certificates.py && python3 exact_certificates_odd.py && python3 verify_thm2a_even.py && python3 step5_equality_sets.py` | each script reports success (`True` / `ALL OK = True`) |
-| `tilted_chsh_fullrange/fullrange/` | `python3 comb.py && python3 exact_c0_all.py && python3 plane_check.py && python3 sigma_check.py && python3 pi4_check.py && python3 v24_conditions.py && python3 v24_datacheck.py` | `ALL OK (open intervals): True`, `ALL c0 IDENTITIES EXACT: True`, `ALL PLANE IDENTITIES EXACT: True`, `sigma image exact: True`, and the corresponding success markers for the remaining scripts |
-| `tilted_chsh_fullrange/fullrange/` | `python3 vgen.py c_Wa.json --strips 23 24` | `ALL OK = True` |
-| `tilted_chsh_fullrange/fullrange/` | `python3 vgen.py c_Wa_negpin_a.json` | the negative control reports `ALL OK = False` |
-| `tilted_chsh_fullrange/smalltheta/` | `python3 sgen.py c_V1s.json` | `ALL OK = True` |
-| `tilted_chsh/` | `python3 verify_thm3.py V1` and `python3 verify_thm3.py V3` | `ALL OK = True` for each family |
-
-A floating-point check is not sufficient for these certificates, because the margin vanishes exactly at the target overlap and at tight endpoints. Those zeros are handled in exact arithmetic; the remaining interval is covered by enclosures in ball arithmetic.
+| Statement in the paper | Command | Inputs | Expected output |
+|---|---|---|---|
+| Closed-form vertices, multipliers, and local slacks of the I_δ quadrilateral, for every 0 < δ ≤ π/6 | `python3 idelta/certify_idelta.py` | none | `All I_δ identities and interval sign checks passed.` |

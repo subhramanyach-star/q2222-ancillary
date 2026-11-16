@@ -1,10 +1,10 @@
 # Dependencies
 
-The stand-alone verifiers that support the computer-assisted claims of the accompanying paper need:
+The stand-alone verifiers that support the computer-assisted claims of the accompanying paper, and the symbolic check of the \(I_\delta\) identities, need:
 
 - Python 3
 - python-flint 0.9 (`pip install python-flint==0.9.0`), for the detection-loss, CHSH-variant, and ball-arithmetic checks
-- sympy, for some exact identities in the tilted-CHSH polygon checks
+- sympy, for the exact \(I_\delta\) identities
 
 The published checkers use only the Python standard library together with those packages. They do not call an SDP or conic solver.
 
