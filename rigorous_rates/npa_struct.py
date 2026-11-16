@@ -1,8 +1,9 @@
 """Exact combinatorial structure of the real NPA moment matrix for the CHSH (2222) scenario.
 Binary observables A0,A1,B0,B1 (A_x^2=B_y^2=1, [A_x,B_y]=0).  Words are reduced (no repeated letter),
 Alice letters before Bob letters.  Entry (u,v) of the moment matrix is <u^dagger v>; for a REAL relaxation
-<w> and <w^dagger> are identified (Re of a complex moment matrix is feasible), so the canonical key of a word
-is min(w, reverse(w)) on each party.  Self-contained (no solver), used by both the certifier and the verifier.
+<w> and <w^dagger> are identified (Re of a complex moment matrix is feasible).  The canonical key identifies
+(a,b) with (reverse(a), reverse(b)), reversing both party words simultaneously.  Self-contained (no solver),
+used by both the certifier and the verifier.
 Coordinates z=(a0,a1,b0,b1,E00,E01,E10,E11)."""
 import itertools
 OPS_A=('A0','A1'); OPS_B=('B0','B1')

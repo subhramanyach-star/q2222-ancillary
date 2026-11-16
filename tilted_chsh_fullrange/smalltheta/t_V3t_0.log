@@ -1,3 +1,0 @@
-tgen c_V3t.json vertex=V3 prec=100 tstrips [0]
-  done tstrip 0: {'ok': False, 'why': 'endpoint', 't': ['183643/536870912', '734573/2147483648']} (262s)
-RESULT c_V3t.json: ALL OK = False ; 0 boxes ; 262.0s

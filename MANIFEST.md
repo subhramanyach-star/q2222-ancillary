@@ -1,56 +1,45 @@
-# MANIFEST: claim -> certificate -> verifier (manuscript prl_v19)
+# Manifest of computer-assisted checks
 
-R. Ramanathan and Y. Wu (HKU). Numbering is that of **prl_v19** (Letter: Results 1-5, Eq. (1), Fig. 1; Supplement:
-Theorems S1-S6, Lemma S1, Propositions S1-S2, Tables S1-S4). Run every command inside the directory named in its row
-(data are loaded by relative path). Software: Python 3.13, python-flint 0.9 (Arb), numpy, sympy; no verifier below
-calls an SDP or conic solver unless marked **[solver]**. Integrity: `md5sum -c --quiet HASHES.md5` (prints nothing).
+This file maps the computer-assisted statements of the accompanying paper to the verifier, the certificate files, and the expected output. Run each command from the root of the repository unless a row says otherwise. A check has succeeded only if the process exits with status 0 and prints the stated marker.
 
-**Repository: placeholder.** Ref. [anc] of prl_v19 still reads "[REPOSITORY URL TO BE ADDED]". *Submission blocker*:
-the bundle must be deposited at a fixed, citable location (e.g. Zenodo DOI or a tagged GitHub release) before submission.
+The normal-cone construction, the exact quantum-bound formula, the necessary condition for certified-randomness maxima, the reduction of the loss model to two-qubit strategies, and the canonical CHSH maximum under equal-efficiency loss are proved in the paper and have no computer-assisted step here.
 
-## A. Proved by hand (no computer step)
+## Detection loss
 
-| claim | where proved |
+| Statement in the paper | Command | Inputs | Expected output |
+|---|---|---|---|
+| Bell expressions maximized by the numerically optimized strategies (112 efficiencies, 656 vertices) | `python3 lossycone/vpt_t4.py` | `lossycone/data/t4/<eta>.json` | `RESULT ALL OK = True`; 112 points, 656 vertices accepted |
+| Explicit Bell expressions certify randomness above the CHSH bound (lower ends of the selected-expression intervals, and the CHSH caps) | `python3 lossycone/verify_t4_rates.py` | the same T4 certificates | `ALL OK = True (112 points)` |
+| Upper ends of the selected-expression intervals at the six reference efficiencies \(0.75,0.80,0.85,0.90,0.95,0.98\) | `python3 lossycone/verify_t4_attack.py` | T4 attack data; the six published upper endpoints | certified \(H_{\mathrm{hi}}\) at most \(0.009847\), \(0.037864\), \(0.095105\), \(0.198627\), \(0.385566\), \(0.597368\); `RESULT ALL OK = True` |
+| The constructions cover every efficiency in \([0.75,0.98]\) | the interval-guarantee block of `python3 lossycone/verify_t4_rates.py` | the T4 grid | adjacent-band guaranteed lower gains \(5.32\%\), \(8.52\%\), \(10.78\%\), \(12.21\%\), \(8.04\%\); grid-point lower end at least \(8.8\%\); table-efficiency lower end at least \(9.2\%\) |
+| The remaining CHSH sign class lies strictly below the certified canonical maximum | `python3 chsh_variants/verify_variants.py` | `chsh_variants/class2_certs.json` and the T4 certificates | `ALL OK = True`; minimum certified gap at least \(3.19\times 10^{-3}\) |
+| Rounding of interval endpoints to floating-point values | `python3 rigorous_rates/test_certified_float.py` | none | `certified_float unit check: ALL OK` |
+| A tampered cone certificate is rejected | `python3 lossycone/tamper.py` | a temporary copy of a certificate; the shipped JSON is not modified | the perturbed certificate is rejected |
+
+The six-decimal selected-expression intervals in the paper, whose upper ends are certified by the attack path and whose lower ends are certified by the rate path, are:
+
+| \(\eta\) | interval |
 |---|---|
-| Theorem S1 (exact dual, Eq. (1)), given the generation theorem of Ref. [RamanathanNDWU] | Supp. Sec. S1, Steps 1-5 |
-| Lemma S1 (properties of P_g), Theorem S2 (the best witness is maximised by its own data; necessary condition) | Supp. Sec. S2 |
-| Proposition S1 (reduction under loss; pull-back identity M^T g in N_Q(q)) | Supp. Sec. S2 |
-| Proposition S2 (i)-(ii) (CHSH variants: relabelling reduction to two classes; local random recordings) | Supp. Sec. S4 |
-| EAT "Fact" (full statistics is a single score in EAT) | Supp. Sec. S5 |
+| \(0.75\) | \([0.009845, 0.009847]\) |
+| \(0.80\) | \([0.037859, 0.037864]\) |
+| \(0.85\) | \([0.095104, 0.095105]\) |
+| \(0.90\) | \([0.198626, 0.198627]\) |
+| \(0.95\) | \([0.385565, 0.385566]\) |
+| \(0.98\) | \([0.597367, 0.597368]\) |
 
-## B. Computer-assisted claims (proofs)
+These are intervals for the selected-expression guessing problem, under the loss model stated in the paper.
 
-| claim (prl_v19) | verifier: directory / command | inputs | expected output | dependencies | time |
-|---|---|---|---|---|---|
-| **Theorem S3** (Result 3): maximised set of p_theta = C(p_theta), all theta in (0, pi/4]; hexagon/octagon; theta* | see `VERIFY.md` sections 1-5 (prl_v14 numbering: its "Theorem 2" = Theorem S3). Core: `tilted_chsh_fullrange/fullrange`: `python3 comb.py`, `exact_c0_all.py`, `plane_check.py`, `sigma_check.py`, `pi4_check.py`, `v24_conditions.py`, `v24_datacheck.py`, `vgen.py c_*.json`; `tilted_chsh`: `verify_thm3.py V1|V3`; `tilted_chsh_fullrange/smalltheta`: `sgen.py`, `tgen3.py` | certificate JSONs next to each script (`c_*.json`, `certs_v13.json`, `thm3_data.json`) | `ALL OK (open intervals): True`, `ALL c0 IDENTITIES EXACT: True`, `ALL PLANE IDENTITIES EXACT: True`, `sigma image exact: True`, `ALL MATCH O: True`, `ALL OK = True` per strip; negative controls `ALL OK = False` | sympy, python-flint | fast checks ~2 min; full strips up to ~10 min each (listed in `VERIFY.md`) |
-| BB octagon as endpoint theta = pi/4 (Result 3) | `tilted_chsh_fullrange/fullrange`: `python3 pi4_check.py`; `tsirelson_octagon`: `exact_certificates.py`, `exact_certificates_odd.py`, `verify_thm2a_even.py`, `step5_equality_sets.py` | in-folder JSON/txt | `ALL MATCH O: True`; `SUMMARY ... True` | sympy, flint | ~5 s |
-| **Theorem S4** (Result 4): exact maximised sets M^{-T} C(q_eta) at the best devices found, 6 main + all 112 grid efficiencies (656 vertices) | `lossycone`: `python3 vpt_t4.py` | `data/t4/<eta>.json` (rational device, polygon, per-vertex certificate curves delta(c)) | last line `RESULT ALL OK = True`; reference `vpt_t4.log` | flint (160-bit Arb), `exact.py`, `vpt.py` | ~3 min |
-| Theorem S4, negative controls | `lossycone`: `python3 tamper.py` | perturbed certificates of the six main devices (`data/points.json`, `data/certs.json`) | every line `REJECTED` | flint | <1 min |
-| **Theorem S5** (Result 4, Table S2 "our witness" and "CHSH bench. <=" columns, Fig. 1(a)) | `lossycone`: `python3 verify_t4_rates.py` | `data/t4/<eta>.json` (witness weights, exact NPA dual certificates per guess, CHSH-cap certificate) | per point `H_lo >= ...  every CHSH <= ...  OK`; e.g. `0.900 ... 0.198626 ... 0.168313`; `ALL OK = True (112 points)`; reference `verify_t4_rates.log` | `../rigorous_rates/verify_all.py` (exact LDL^T), `../eta_study/cert_eta.py` (loss functional), flint | ~10 s |
-| **Theorem S6** (Result 4: every eta in [0.75, 0.98], interval gains 5.33/8.52/10.79/12.21/8.04 %) | same run of `verify_t4_rates.py` (block "interval guarantees") | as above | `[0.75, 0.80]: gain >= 5.33%` ... `[0.95, 0.98]: gain >= 8.04%`; `grid-point gains: 8.87% .. 18.01%` | as above + Proposition S2(iii) below | (same run) |
-| **Proposition S2(iii)** (CHSH benchmark: second class of sign variants below S_up at all 112 grid points) | `chsh_variants`: `python3 verify_variants.py` | `class2_certs.json` (exact level-3 certificates), `../lossycone/data/t4/<eta>.json` | 112 lines `OK`; `min margin 3.200e-03 at eta = 0.980`; `ALL OK = True`; reference `verify_variants.log` | `rigorous_rates/verify_all.py`, `eta_study/cert_eta.py` | ~2 s |
-| Proposition S2(iii), certificate generation | `chsh_variants`: `python3 class2_cert.py` **[solver]** (overwrites `class2_certs.json`) | none | `ALL OK = True 112`; reference `class2_cert.log` | cvxpy/Clarabel, `rigorous_rates/rates_core.py` | ~15 s |
-| Table S2, "asym. CHSH, best found" and "polygon, best found" columns (certified lower bounds at the stored devices) | `verify_extra`: `python3 verify_lower.py` (wapcone part) | `../wapcone/certs/eta*_{wap,comb,full}.json` | one `OK` line per file | `rigorous_rates/verify_all.py`, `eta_study/cert_eta.py` (polygon vertices in Arb) | (same run) |
-| **Proposition S2(iv)** (CHSH benchmark under source noise: white / dephasing / experiment-matched rows) | `chsh_variants`: `python3 verify_noise_variants.py` | `noise_class2_certs.json` | `ALL OK = True`, min margin `1.960e-02`; reference `noise_class2.log` | `rigorous_rates/verify_all.py` | ~2 s |
-| Proposition S2(iv), certificate generation | `chsh_variants`: `python3 noise_class2.py` **[solver]** | `../noise/certs/wd_*.json` for the eight experiment rows | `ALL OK = True n= 23`; writes `noise_class2_certs.json` | cvxpy/Clarabel, `rates_core` | ~5 s |
-| **Table S4 / Result 5** (experiment-matched: CHSH cap in the noise model, tilted and polygon lower bounds) | `verify_extra`: `python3 verify_lower.py` (noise part; rows `wd_eta*`) | `../noise/certs/*.json` | e.g. `wd_eta0.8749_q0.9936-1.0.json S_up exact True every CHSH <= 0.111332 tilted >= 0.116178 cone >= 0.121833 OK`; final `ALL OK = True (119 files)`; reference `verify_lower.log` | as above | ~5 s |
-| Earlier-witness and white-noise studies cited in the companion paper | `eta_study`: `verify_eta.py`, `neg_tests.py`; `rigorous_rates`: `verify_all.py`, `verify_vn.py` | in-folder certs | see `VERIFY.md` sections 7-8 | flint | fast |
+## Tilted-CHSH supporting polygons
 
-Upper ends of the two-sided intervals (explicit qubit attacks, ball arithmetic) are stored in the `attack` blocks and
-verified in ball arithmetic by the producing scripts (`rigorous_rates/rates_core.verify_attack`); the stand-alone verifiers above re-check only the lower bounds and the CHSH caps, which are all that the separations need.
+The theorem on Bell tests maximized by tilted-CHSH sources is checked in three parts: exact identities for the vertex formulae (including the closed-form \(V_2,V_4\) bounds and the comparison with the Tsirelson octagon at maximal entanglement); exact endpoint identities; and a ball-arithmetic cover of the overlap interval. Run these commands in the directory named in the first column.
 
-## C. Numerical (not proved; no claim of the manuscript is a theorem about these)
-
-| item | script | output |
+| Directory | Command | Expected output |
 |---|---|---|
-| Table S1 (benchmark of Eq. (1) against closed forms; NPA columns) | `socp`: `python3 bench.py` **[solver]**, `mktable.py` | `bench.json`, `bench.log`, `bench_table.tex` |
-| Eq. (1) evaluator | `socp/socp_core.py` **[solver]** | upper bounds by weak duality for any returned delta; exactness needs the interval check of Theorems S3-S4 |
-| Device optimisation (best devices found) | `lossycone`, `wapcone/cert_wc.py` (design script; imports a search module not shipped), `noise/nz.py` | stored rational devices only; optimality is **not** claimed |
-| "single score reproduces full statistics to 1e-6 bits at 5 of 6 efficiencies" | floating-point NPA level 3 | `lossycone/REPORT.md` |
-| Table S3 and Sec. S5 (finite size, EAT, i.i.d. confidence regions) | `finitesize`: `run_eat.py`, `cr.py`, `cr_opt_chsh.py`, `check_asym.py` **[solver]** | `out/`, `logs/` |
-| Table S4 "best CHSH" and "est. gain" columns | `noise/nz.py` **[solver]** | `noise/out/tables.md` |
-| von Neumann rates (companion paper only) | `eta_study/vn_opt.py`, `rates_v11/` | exact-PSD dual, but Gauss-Radau nodes/weights in double precision: **numerical**, not certified |
+| `tsirelson_octagon/` | `python3 exact_certificates.py && python3 exact_certificates_odd.py && python3 verify_thm2a_even.py && python3 step5_equality_sets.py` | each script reports success (`True` / `ALL OK = True`) |
+| `tilted_chsh_fullrange/fullrange/` | `python3 comb.py && python3 exact_c0_all.py && python3 plane_check.py && python3 sigma_check.py && python3 pi4_check.py && python3 v24_conditions.py && python3 v24_datacheck.py` | `ALL OK (open intervals): True`, `ALL c0 IDENTITIES EXACT: True`, `ALL PLANE IDENTITIES EXACT: True`, `sigma image exact: True`, and the corresponding success markers for the remaining scripts |
+| `tilted_chsh_fullrange/fullrange/` | `python3 vgen.py c_Wa.json --strips 23 24` | `ALL OK = True` |
+| `tilted_chsh_fullrange/fullrange/` | `python3 vgen.py c_Wa_negpin_a.json` | the negative control reports `ALL OK = False` |
+| `tilted_chsh_fullrange/smalltheta/` | `python3 sgen.py c_V1s.json` | `ALL OK = True` |
+| `tilted_chsh/` | `python3 verify_thm3.py V1` and `python3 verify_thm3.py V3` | `ALL OK = True` for each family |
 
-## D. Known gaps
-1. Repository URL (blocker, above).
-2. `wapcone/cert_wc.py` and `noise/ncert.py` are generation scripts; the stand-alone check is `verify_extra/verify_lower.py`.
+A floating-point check is not sufficient for these certificates, because the margin vanishes exactly at the target overlap and at tight endpoints. Those zeros are handled in exact arithmetic; the remaining interval is covered by enclosures in ball arithmetic.

@@ -1,2 +1,0 @@
-t in [1/40, 3/20] k=2 L=2: {'endpoint_ok': True, 'endpoint_boxes': 498, 'bnb_ok': True, 'nboxes': 84741, 'fails': [], 'time_s': 13.3} 13.4s
-t in [3/20, 5359/20000] k=2 L=2: {'endpoint_ok': True, 'endpoint_boxes': 163, 'bnb_ok': True, 'nboxes': 128791, 'fails': [], 'time_s': 24.1} 24.1s

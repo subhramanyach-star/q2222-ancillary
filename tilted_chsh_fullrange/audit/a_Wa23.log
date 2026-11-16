@@ -1,3 +1,0 @@
-vgen c_Wa.json vertex=Wa pins={1: [1, 1]} prec=120 strips 23..23
-strip  23 x in [24801/100000, 1/4] (theta/pi ~ [0.248010, 0.250000]): {'ok': True, 'nboxes': 1667, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 3686, 'T1': 2038, 'T2': 432}}
-RESULT c_Wa.json: ALL OK = True ; 1667 boxes ; 4.5s

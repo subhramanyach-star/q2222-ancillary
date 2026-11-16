@@ -1,4 +1,4 @@
-# theta = pi/4 (s=1): do the 8 vertices of C_theta coincide with the Tsirelson octagon O of prl_r4 Thm 3
+# theta = pi/4 (s=1): do the 8 vertices of C_theta coincide with the Tsirelson octagon O
 # (g = g(Lambda=1/2, d): e = E/2, a_x = -d_x, b_y = sum_x d_x E_xy, d on the regular octagon of radius rho = 1 - 1/sqrt2)?
 import json, sympy as sp
 s,C,r=sp.symbols('s C r',positive=True); loc={'s':s,'C':C,'r':r}

@@ -65,7 +65,12 @@ def PT():
     gc=[x/(2*S2) for x in G_CHSH]; rho=1-1/S2
     def g_r(r0,r1): return [gc[0]+r0/S2+r1/S2, gc[1]+r0/S2-r1/S2, gc[2]-r0, gc[3]-r1]+gc[4:]
     return P,{'CHSH (centre)':gc,'half-way to g0':g_r(rho/2,0),'vertex g0':g_r(rho,0)}
-def hL(g): return max((dot(g,L) for L in DET),key=lambda x:x.mid())
+def hL(g):
+    """Diagnostic-only local-bound estimate.  NOT used by verify_all.py or any
+    certificate acceptance path.  The deterministic point is selected by the
+    midpoint of the Arb enclosure, which can miss the largest true value when
+    intervals overlap; do not use this as a certified maximum."""
+    return max((dot(g,L) for L in DET),key=lambda x:x.mid())
 # ---------------- case builder (shared by runner and standalone verifier) ----------------
 def fr(s): q=Fraction(s); return arb(q.numerator)/q.denominator
 def build(spec):
@@ -79,6 +84,8 @@ def build(spec):
         elif w.startswith('vertex:'): g=order[int(w[7:])]
         elif w.startswith('lam:'):
             lam=[fr(x) for x in w[4:].split(',')]
+            if len(lam) != 6:
+                raise ValueError('lam: specifications require exactly six weights')
             g=[sum((lam[i]*order[i][j] for i in range(6)),arb(0)) for j in range(8)]
         return p,g,order
     if fam=='Id':

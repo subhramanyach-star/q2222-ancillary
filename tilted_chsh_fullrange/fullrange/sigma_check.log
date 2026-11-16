@@ -1,7 +1,0 @@
-available: ['V1', 'V2', 'V1s', 'V3', 'V4', 'V3s', 'Wa', 'Wb', 'Wa_s', 'Wb_s']
-Wa Wa_s sigma image exact: False
-Wb Wb_s sigma image exact: False
-Wa Wb_s sigma image exact: True
-Wb Wa_s sigma image exact: True
-V1 V1s sigma image exact: True
-V3 V3s sigma image exact: True

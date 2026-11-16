@@ -1,6 +1,0 @@
-V1 [((1, 1), True), ((1, -1), True), ((-1, 1), True), ((-1, -1), True)]
-V3 [((1, 1), True), ((1, -1), True), ((-1, 1), True), ((-1, -1), True)]
-Wa [((1, 1), True), ((1, -1), True), ((-1, 1), True), ((-1, -1), True)]
-Wb [((1, 1), True), ((1, -1), True), ((-1, 1), True), ((-1, -1), True)]
-ALL c0 IDENTITIES EXACT: True
-EXIT 0

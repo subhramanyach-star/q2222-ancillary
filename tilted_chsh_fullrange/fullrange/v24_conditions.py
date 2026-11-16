@@ -1,4 +1,4 @@
-# Exact sign check (comb.sign_open: norm-root isolation + Arb) of the V2, V4 certificate conditions of prl_r4 App.
+# Exact sign check (comb.sign_open: norm-root isolation + Arb) of the V2, V4 certificate conditions.
 # on the open interval s in (0,1), plus Arb at s=1:  kappa < 1/2, c1 < c0, (beta + sgn(a0) kappa)^2 < nu^2, A2 > 0,
 # with u1 = |a0|/kappa, c1 = u1^2/2 - 1, c0 = (1-s^2)/(1+s^2).
 import sympy as sp

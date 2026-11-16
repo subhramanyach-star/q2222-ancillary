@@ -1,5 +1,5 @@
 # Exact check (added for the v13 bundle) that the V2, V4 vertex data in thm3_data.json equal the closed forms printed in
-# prl_v13 App. D ("Hexagon") and used by v24_conditions.py:
+# Data used by v24_conditions.py for the hexagonal section:
 #   V2 = ((r+C)/(2D), 0, bbar, bbar, kappa, kappa, nu, -nu), D = r+1, bbar = (C-1)/(2D), kappa = (C+r+2s^2)/(4D), nu = (r+2-C)/(4D);
 #   V4: same form with kappa, nu from C -> -C, and a0 = (C-r)/(2D), bbar = (C+1)/(2D).
 # Equality is decided exactly in K = Q(s)(C, r), C^2 = 1-s^2, r^2 = 1+s^2 (kfield.from_sympy; zero test is exact).

@@ -1,3 +1,6 @@
+if not __debug__:
+    raise RuntimeError('Verification must not run with Python optimization enabled')
+
 #!/usr/bin/env python3
 """Stand-alone verifier: N_Q(q) = C(q) at the rational qubit points of data/points.json (computer-assisted proof).
 
@@ -25,7 +28,6 @@ import flint
 from flint import arb, arb_series, fmpq
 flint.ctx.prec = 160
 import os as _os; _H = _os.path.dirname(_os.path.abspath(__file__)) if '__file__' in globals() else '.'
-P = json.load(open(_os.path.join(_H, 'data/points.json'))); CERT = json.load(open(_os.path.join(_H, 'data/certs.json')))
 def fq(x): x = Fr(x); return fmpq(x.numerator, x.denominator)
 def A(x): x = Fr(x); return arb(fmpq(x.numerator, x.denominator))
 DET = [(a0, a1, b0, b1) for a0 in (1, -1) for a1 in (1, -1) for b0 in (1, -1) for b1 in (1, -1)]
@@ -59,12 +61,14 @@ def rederive(pt):
         assert gi[0]*w[0] + gi[1]*w[1] == t*t          # cone (a|x) active
         v = [gi[0]/t, gi[1]/t]; g = [Fr(0)]*8; g[x] = Fr(-a); g[2:4] = v; g[4+2*x] = a*v[0]; g[5+2*x] = a*v[1]; G.append(g)
     m = [dot(g, zd) for g in G]
+    if not any((m[j] - m[i]) != 0 for i in range(4) for j in range(i+1, 4)):
+        raise ValueError('normalization and stationarity equations do not have rank two')
     rows = [([Fr(-1) if j == i else Fr(0) for j in range(4)], Fr(0)) for i in range(4)]
     rows += [([dot(G[k], detz(L)) for k in range(4)], Fr(1)) for L in DET]
     verts = []
     for i, j in itertools.combinations(range(len(rows)), 2):
         mu = solve([[Fr(1)]*4, m, rows[i][0], rows[j][0]], [Fr(1), Fr(0), rows[i][1], rows[j][1]])
-        if mu is None or not all(dot(r, mu) <= rr for r, rr in rows): continue
+        if mu is None or not all(dot(r, mu) <= rr for r, rr in rows) or not all(x >= 0 for x in mu): continue
         if mu not in verts: verts.append(mu)
     gs = [[sum((mu[k]*G[k][jj] for k in range(4)), Fr(0)) for jj in range(8)] for mu in verts]
     return z, c0, G, m, verts, gs
@@ -94,8 +98,33 @@ def cheb_polys(n):
     T = [[Fr(1)], [Fr(0), Fr(1)]]
     while len(T) < n + 1: T.append(padd(pmul([Fr(0), Fr(2)], T[-1]), pscale(T[-2], -1)))
     return T[:n+1]
+def validate_pins(pins):
+    """Require every pin to satisfy the hypotheses of the factorization
+    ||(c-eps) rho(c)||_c = (1 - eps c) ||rho(c)||_c: eps in {-1,+1}, bx in {0,1}, ba in {-1,+1}.
+    Membership tests use Python tuples, i.e. discrete values, not open real intervals.
+    Empty pins are allowed.  Raise ValueError on a malformed pin."""
+    if not pins:
+        return {}
+    out = {}
+    for k, v in pins.items():
+        try:
+            eps = k if type(k) is int else int(k)
+        except (TypeError, ValueError):
+            raise ValueError('malformed pin: eps is not an integer')
+        if not (isinstance(v, (list, tuple)) and len(v) == 2):
+            raise ValueError('malformed pin: expected (bx, ba)')
+        bx, ba = v[0], v[1]
+        if eps not in (-1, 1):
+            raise ValueError('malformed pin: eps must be in {-1, +1}')
+        if bx not in (0, 1):
+            raise ValueError('malformed pin: bx must be in {0, 1}')
+        if ba not in (-1, 1):
+            raise ValueError('malformed pin: ba must be in {-1, +1}')
+        out[eps] = (bx, ba)
+    return out
 def build_delta(g, d0, d1, c0, R, pins):
     """delta(c) as two exact rational polynomials, with pins (as in fullrange/vgen.py)."""
+    pins = validate_pins(pins)
     n = len(R) - 1; T = cheb_polys(n)
     Q = [sum((pscale(T[j], R[j][i]) for j in range(n + 1)), []) if False else None for i in range(2)]
     Q = []
@@ -120,6 +149,7 @@ def gram_poly(u):
     return padd(padd(pmul(u[0], u[0]), pmul(u[1], u[1])), pmul([Fr(0), Fr(2)], pmul(u[0], u[1])))
 def branches(g, dl, pins):
     """For each sign pair s: (T_s, [(kind, poly)...]) with kind 0: sqrt(P(c)); kind eps: (1 - eps c) sqrt(P(c))."""
+    pins = validate_pins(pins)
     b = g[2:4]; U = {}; W = {}
     for a in (1, -1):
         U[a] = [padd([b[i]/2 + a*g[4+i]], dl[i]) for i in range(2)]
@@ -187,8 +217,13 @@ def shift(Pa, cm):
         for i in range(n - 2, k - 1, -1): a[i] = a[i] + cm*a[i + 1]
         out.append(a[k])
     return out
-def Fball(brA, c, cm=None):
-    """F_s on c (arb or arb_series); if cm (fmpq) is given, c is the OFFSET t = c - cm and polynomials are shifted."""
+def Fball(brA, c, cm=None, cache=None):
+    """F_s on c (arb or arb_series); if cm (fmpq) is given, c is the OFFSET t = c - cm and polynomials are shifted.
+    cache must be a dict local to a single verify_vertex call.  Keys use id(Pa), which is only
+    safe while those polynomial lists remain alive; a process-global cache can leak across
+    certificates after those lists are destroyed and Python reuses the IDs."""
+    if cache is None:
+        cache = {}
     out = []
     for s, (T, terms) in brA.items():
         val = T
@@ -196,38 +231,40 @@ def Fball(brA, c, cm=None):
             if cm is None: Pv = aeval(Pa, c); cc = c
             else:
                 key = (id(Pa), cm)
-                if key not in _SH: _SH.clear() if len(_SH) > 64 else None; _SH[key] = shift(Pa, arb(cm))
-                Pv = aeval(_SH[key], c); cc = c + arb(cm)
+                if key not in cache:
+                    cache[key] = shift(Pa, arb(cm))
+                Pv = aeval(cache[key], c); cc = c + arb(cm)
             r = sqrt_nn(Pv)
             val = val - ((1 - kind*cc)*r if kind else r)
         out.append(val)
     return out
-_SH = {}
 def ball(a, b): return arb((a + b)/2, (b - a)/2)
 def _midq(H):
     m = H.mid(); return fmpq(int((m*2**60).floor().unique_fmpz()), 2**60)
-def accept(brA, ca, cb, c0):
+def accept(brA, ca, cb, c0, cache):
     cm = (ca + cb)/2; rc = (cb - ca)/2; Bt = arb(0, rc)
-    F0 = Fball(brA, Bt, cm); Fm = Fball(brA, arb(0), cm); Fs = Fball(brA, arb_series([Bt, 1], prec=3), cm)
+    F0 = Fball(brA, Bt, cm, cache); Fm = Fball(brA, arb(0), cm, cache); Fs = Fball(brA, arb_series([Bt, 1], prec=3), cm, cache)
     tests = []
     for i in range(4):
         if F0[i].is_finite() and F0[i] > 0: tests.append('T0'); continue
         d1 = coeffs(Fs[i], 3)[1]
         if Fm[i].is_finite() and d1.is_finite() and Fm[i] - abs(d1)*arb(rc) > 0: tests.append('T1'); continue
         if cb > fmpq(1, 2):
-            hm = (ca + 1)/2; z = coeffs(Fball(brA, arb_series([arb(0, (1 - ca)/2), 1], prec=3), hm)[i], 3)[1]
+            hm = (ca + 1)/2; z = coeffs(Fball(brA, arb_series([arb(0, (1 - ca)/2), 1], prec=3), hm, cache)[i], 3)[1]
             if z.is_finite() and z < 0: tests.append('T3+'); continue
         if ca < -fmpq(1, 2):
-            hm = (cb - 1)/2; z = coeffs(Fball(brA, arb_series([arb(0, (cb + 1)/2), 1], prec=3), hm)[i], 3)[1]
+            hm = (cb - 1)/2; z = coeffs(Fball(brA, arb_series([arb(0, (cb + 1)/2), 1], prec=3), hm, cache)[i], 3)[1]
             if z.is_finite() and z > 0: tests.append('T3-'); continue
         lo = min(ca, c0); hi = max(cb, c0)
         if hi - lo < fmpq(3, 5):
-            hm = (lo + hi)/2; f2 = coeffs(Fball(brA, arb_series([arb(0, (hi - lo)/2), 1], prec=3), hm)[i], 3)[2]
+            hm = (lo + hi)/2; f2 = coeffs(Fball(brA, arb_series([arb(0, (hi - lo)/2), 1], prec=3), hm, cache)[i], 3)[2]
             if f2.is_finite() and f2 > 0: tests.append('T2'); continue
         return None
     return tests
 def verify_vertex(g, mu, c0, cert, maxbox=400000):
-    R = [[Fr(x) for x in row] for row in cert['R']]; pins = {int(k): tuple(v) for k, v in cert['pins'].items()}
+    # Shift cache is local to this certificate, so id(Pa) cannot leak across vertices.
+    cache = {}
+    R = [[Fr(x) for x in row] for row in cert['R']]; pins = validate_pins(cert['pins'])
     d0, d1 = cert['_d0'], cert['_d1']
     dl = build_delta(g, d0, d1, c0, R, pins)
     assert [peval(dl[i], c0) for i in range(2)] == d0
@@ -236,7 +273,7 @@ def verify_vertex(g, mu, c0, cert, maxbox=400000):
     stack = [(fmpq(-1) + fmpq(2*i, 64), fmpq(-1) + fmpq(2*(i + 1), 64)) for i in range(64)]
     n = 0; cnt = {}; total = fmpq(0); c0q = fq(c0)
     while stack:
-        ca, cb = stack.pop(); t = accept(brA, ca, cb, c0q)
+        ca, cb = stack.pop(); t = accept(brA, ca, cb, c0q, cache)
         if t is not None:
             n += 1; total += cb - ca
             for x in t: cnt[x] = cnt.get(x, 0) + 1
@@ -261,13 +298,38 @@ def forced(G, mu, c0, g):
     d1 = solve([eqs[0][0], eqs[1][0]], [eqs[0][1], eqs[1][1]])
     assert dot(eqs[2][0], d1) == eqs[2][1]
     return d0, d1
-if __name__ == '__main__':
-    etas = sys.argv[1:] or list(P)
+def load_points_certs(points_path=None, certs_path=None):
+    """Load the legacy few-eta points/certs JSON.  Not called at import time, so T4
+    verification does not depend on these files."""
+    if points_path is None:
+        points_path = _os.path.join(_H, 'data/points.json')
+    if certs_path is None:
+        certs_path = _os.path.join(_H, 'data/certs.json')
+    return json.load(open(points_path)), json.load(open(certs_path))
+
+def run(P, CERT, etas=None):
+    """Verify the requested etas against the supplied point and certificate dictionaries.
+    Returns True iff the collection is nonempty and every vertex certificate is accepted.
+    Does not call sys.exit (callers do)."""
+    if etas is None:
+        etas = list(P)
+    if not etas:
+        print('empty requested collection')
+        print('RESULT ALL OK =', False)
+        return False
     allok = True
     for e in etas:
+        if e not in P:
+            print('eta %s: NOT FOUND' % e, flush=True)
+            allok = False
+            continue
         pt = P[e]; t0 = time.time()
         z, c0, G, m, verts, gs = rederive(pt)
         assert [str(x) for x in z] == pt['z'] and str(c0) == pt['c0']
+        if not verts:
+            print('eta %s: no reconstructed vertex' % e, flush=True)
+            allok = False
+            continue
         filev = [[Fr(x) for x in V['mu']] for V in pt['verts']]
         assert sorted(map(tuple, verts)) == sorted(map(tuple, filev)), 'vertex list mismatch'
         print('eta %s: q, c0, cones active, %d vertices re-derived exactly (exhaustive pair enumeration)' % (e, len(verts)), flush=True)
@@ -280,8 +342,15 @@ if __name__ == '__main__':
             if cert is None: print('  vertex %d: NO CERTIFICATE' % k); allok = False; continue
             d0, d1 = forced(G, mu, c0, g); cert = dict(cert, _d0=d0, _d1=d1)
             try: r = verify_vertex(g, mu, c0, cert)
-            except AssertionError as ex: r = dict(ok=False, why=str(ex))
+            except (AssertionError, ValueError) as ex: r = dict(ok=False, why=str(ex))
             allok &= r['ok']
             print('  vertex %d tight %s: %s' % (k, [L for L in DET if dot(g, detz(L)) == 1], r), flush=True)
         print('eta %s done in %.1fs' % (e, time.time() - t0), flush=True)
     print('RESULT ALL OK =', allok)
+    return bool(allok)
+
+if __name__ == '__main__':
+    P, CERT = load_points_certs()
+    etas = sys.argv[1:] or list(P)
+    allok = run(P, CERT, etas)
+    sys.exit(0 if allok else 1)

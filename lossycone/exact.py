@@ -4,6 +4,10 @@ all cos/sin rational (points on the unit circle via t = tan(angle/2) rational). 
 Bob's overlap c0 = cos(b1-b0) and sqrt(1-c0^2) are rational, and so are the slice gradients gamma_{a|x}, the overlap
 derivative zdot, the candidate polygon C(q) (slice cone + stationarity + 16 deterministic cuts), its vertices, and the
 forced certificate data d0, d1 at c0.  Coordinates z=(al0,al1,be0,be1,E00,E01,E10,E11); g=(a0,a1,b0,b1,e00,e01,e10,e11)."""
+
+if not __debug__:
+    raise RuntimeError('Verification must not run with Python optimization enabled')
+
 from fractions import Fraction as Fr
 import itertools, math, json
 def circ(t, den):
@@ -48,6 +52,11 @@ def analyse(dev):
         assert dot(g, z) == 1 and gnorm2(v[a, x], c0) == 1
     m = [dot(gam[k], zd) for k in ORDER]
     G = [gam[k] for k in ORDER]
+    # Normalization (sum mu = 1) and stationarity (mu.m = 0) must have rank two,
+    # otherwise enumerating vertices by two additional tight inequalities would
+    # miss a positive-dimensional family.
+    if not any((Fr(1)*m[j] - Fr(1)*m[i]) != 0 for i in range(4) for j in range(i+1, 4)):
+        raise ValueError('normalization and stationarity equations do not have rank two')
     # polygon section: mu >= 0, sum mu = 1, mu.m = 0, (sum mu_k G_k).L <= 1 for all 16 L.
     rows = []   # constraints r.mu <= rhs ; tight means r.mu == rhs
     for i in range(4): rows.append(([Fr(-1) if j == i else Fr(0) for j in range(4)], Fr(0), ('mu', i)))
@@ -58,7 +67,7 @@ def analyse(dev):
         M = [[Fr(1)]*4, list(m), rows[i][0], rows[j][0]]; rhs = [Fr(1), Fr(0), rows[i][1], rows[j][1]]
         mu = solve(M, rhs)
         if mu is None: continue
-        if all(dot(r, mu) <= rr for r, rr, _ in rows):
+        if all(dot(r, mu) <= rr for r, rr, _ in rows) and all(x >= 0 for x in mu):
             if not any(mu == vv['mu'] for vv in verts):
                 g = [sum((mu[k]*G[k][jj] for k in range(4)), Fr(0)) for jj in range(8)]
                 tight = [lab for r, rr, lab in rows if dot(r, mu) == rr]

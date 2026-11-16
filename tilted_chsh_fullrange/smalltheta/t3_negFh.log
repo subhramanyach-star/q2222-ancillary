@@ -1,4 +1,0 @@
-tgen3 c_V3t_negFh.json vertex=V3 prec=100 tstrips [0, 1]
-  done tstrip 0: {'ok': False, 'why': 'box', 'box': ['-13123559975/34359738368', '-6561779987/17179869184', '2147483647/4398046511104', '1/2048'], 'pair': 2} (2s)
-  done tstrip 1: {'ok': False, 'why': 'box', 'box': ['-13121212975/34359738368', '-6560606487/17179869184', '4294967295/2199023255552', '1/512'], 'pair': 2} (3s)
-RESULT c_V3t_negFh.json: ALL OK = False ; 0 boxes ; 3.1s

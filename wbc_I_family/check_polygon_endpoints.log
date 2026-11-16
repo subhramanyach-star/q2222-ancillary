@@ -1,5 +1,0 @@
-W1 ('-++-', '----') : 36 conditions positive at both endpoints
-W2 ('+--+', '----') : 36 conditions positive at both endpoints
-W3 ('++++', '+--+') : 36 conditions positive at both endpoints
-W4 ('++++', '-++-') : 36 conditions positive at both endpoints
-minimum value 0.00226048

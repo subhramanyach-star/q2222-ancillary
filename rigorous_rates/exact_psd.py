@@ -1,4 +1,8 @@
 """Exact rational positive-semidefiniteness test (LDL^T with symmetric pivoting) using python-flint fmpq."""
+
+if not __debug__:
+    raise RuntimeError('Verification must not run with Python optimization enabled')
+
 from flint import fmpq
 def is_psd(M):
     """M: list of lists of fmpq (symmetric). Returns (True, min_pivot) if M is PSD, (False, info) otherwise.

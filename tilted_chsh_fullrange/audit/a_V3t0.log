@@ -1,9 +1,0 @@
-tgen3 c_V3t.json vertex=V3 prec=100 tstrips [0]
-   strip 0: 7000 acc 5000 split; at c=[-0.953125,-0.9375] t=[0.00038147,0.000389099] pair 3 why r
-   strip 0: 12016 acc 10000 split; at c=[-0.9921875,-0.99023438] t=[0.000855446,0.000855923] pair 3 why r
-   strip 0: 17020 acc 15000 split; at c=[-0.98828125,-0.984375] t=[0.000653267,0.000654221] pair 2 why r
-   strip 0: 22028 acc 20000 split; at c=[-0.984375,-0.9765625] t=[0.000448227,0.000450134] pair 2 why r
-   strip 0: 27034 acc 25000 split; at c=[-0.9921875,-0.99023438] t=[0.000247478,0.000247955] pair 3 why r
-   strip 0: 32044 acc 30000 split; at c=[-1,-0.984375] t=[3.8147e-05,4.57764e-05] pair 2 why r
-  done tstrip 0: {'ok': True, 'nboxes': 33758, 'nsplit': 31710, 'endpoint_boxes': 8, 'tests': {'T2': 64, 'T4': 128, 'T1': 704, 'T0': 86178, 'T0d': 44049, 'E-': 3909}} (49s)
-RESULT c_V3t.json: ALL OK = True ; 33758 boxes ; 48.7s
