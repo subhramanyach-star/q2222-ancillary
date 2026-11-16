@@ -1,0 +1,9 @@
+W1 (printed as W1) d and tight points match: True
+W2 (printed as W2) d and tight points match: True
+W3 (printed as -W1) d and tight points match: True
+W4 (printed as -W2) d and tight points match: True
+Lambda matches: True
+g_corr = I/I^Q: True
+c0 = -sin delta: True
+Gram determinant = 4096[2(1-cos d)-sin^4 d]: True ; = 16384 sin^2(d/2)[1-sin^2 d cos^2(d/2)]: True
+ALL PRINTED PROP. 6 DATA MATCH: True

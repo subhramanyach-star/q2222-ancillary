@@ -1,0 +1,28 @@
+== V2
+   a0 = (C + r)/(2*r + 2)   [closed form verified: True]
+   beta = (C - 1)/(2*r + 2)   [closed form verified: True]
+   kap = (C + r + 2*s**2)/(4*r + 4)   [closed form verified: True]
+   nu = (-C + r + 2)/(4*r + 4)   [closed form verified: True]
+   other entries: a1 = 0, b1-b0 = 0, c01-c00 = 0, c11+c10 = 0
+   |a0| + 2 nu = 1: True
+   Q(u0) = 0: True   Q'(u0) = 0: True   Q - A2 (u-u0)^2 = 0: True
+   forced data match: tau(c0) = -beta/2 - a0/u0 equals delta0: True ; t* = -beta/2 - sg*kap
+   theta=0.1963: u1=1.7439 (c1=0.5206) < u0=1.8679; max_c Phi_c(delta(c)) - 1 = 2.22e-16; A2=0.1431; nu-|beta+sg*kap|=0.0014
+   theta=0.3927: u1=1.3178 (c1=-0.1317) < u0=1.6330; max_c Phi_c(delta(c)) - 1 = 0.00e+00; A2=0.1843; nu-|beta+sg*kap|=0.0193
+   theta=0.4909: u1=1.1462 (c1=-0.3432) < u0=1.5379; max_c Phi_c(delta(c)) - 1 = 0.00e+00; A2=0.2035; nu-|beta+sg*kap|=0.0429
+   theta=0.5890: u1=1.0107 (c1=-0.4892) < u0=1.4690; max_c Phi_c(delta(c)) - 1 = 2.22e-16; A2=0.2159; nu-|beta+sg*kap|=0.0807
+   theta=0.6283: u1=0.9657 (c1=-0.5337) < u0=1.4492; max_c Phi_c(delta(c)) - 1 = 0.00e+00; A2=0.2180; nu-|beta+sg*kap|=0.1003
+== V4
+   a0 = (C - r)/(2*r + 2)   [closed form verified: True]
+   beta = (C + 1)/(2*r + 2)   [closed form verified: True]
+   kap = (-C + r + 2*s**2)/(4*r + 4)   [closed form verified: True]
+   nu = (C + r + 2)/(4*r + 4)   [closed form verified: True]
+   other entries: a1 = 0, b1-b0 = 0, c01-c00 = 0, c11+c10 = 0
+   |a0| + 2 nu = 1: True
+   Q(u0) = 0: True   Q'(u0) = 0: True   Q - A2 (u-u0)^2 = 0: True
+   forced data match: tau(c0) = -beta/2 - a0/u0 equals delta0: True ; t* = -beta/2 - sg*kap
+   theta=0.1963: u1=0.6679 (c1=-0.7770) < u0=1.8679; max_c Phi_c(delta(c)) - 1 = 0.00e+00; A2=0.0196; nu-|beta+sg*kap|=0.0708
+   theta=0.3927: u1=0.6822 (c1=-0.7673) < u0=1.6330; max_c Phi_c(delta(c)) - 1 = 2.22e-16; A2=0.0771; nu-|beta+sg*kap|=0.2287
+   theta=0.4909: u1=0.7003 (c1=-0.7548) < u0=1.5379; max_c Phi_c(delta(c)) - 1 = 0.00e+00; A2=0.1148; nu-|beta+sg*kap|=0.3122
+   theta=0.5890: u1=0.7288 (c1=-0.7344) < u0=1.4690; max_c Phi_c(delta(c)) - 1 = -1.11e-16; A2=0.1523; nu-|beta+sg*kap|=0.3880
+   theta=0.6283: u1=0.7438 (c1=-0.7234) < u0=1.4492; max_c Phi_c(delta(c)) - 1 = -1.11e-16; A2=0.1660; nu-|beta+sg*kap|=0.3600

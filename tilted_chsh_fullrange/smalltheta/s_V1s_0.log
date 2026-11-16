@@ -1,0 +1,2 @@
+sgen c_V1s.json vertex=V1 prec=120 K=10
+strip 0 [0, 1/256]: {"ok": true, "tboxes": 1, "cboxes": 64, "nsplit": 0, "tests": {"T3+": 5, "T0": 202, "T2": 44, "T3-": 5}}

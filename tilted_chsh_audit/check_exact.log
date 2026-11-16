@@ -1,0 +1,314 @@
+Theta in s: 0.7071067811865476 0.9238795325112867
+PASS   p_theta tight on all four cones of K_c0 (||w||_{G^-1} = t) 
+PASS   c0 = alpha^2/4 with alpha = 2C/r                        
+PASS   I_alpha(p_theta) = sqrt(8+2alpha^2) (= 4/r)             
+PASS   overlap-variation vector m = gamma.zdot equals printed m 
+PASS   ||v_{a|x}||_{G_c0} = 1 for the four generators          
+PASS   Delta_1, Delta_3 printed = q^3-10q^2+33q+40, q^3-2q^2+9q+8 
+PASS   [V1] (a) normalisation g.p_theta = 1 (exact)            
+PASS   [V1] (a) facet saturation g.L = 1, L=(1, 1, 1, 1)       
+PASS   [V1] (a) facet saturation g.L = 1, L=(1, -1, -1, 1)     
+PASS   [V1] (a) g in span of slice generators gamma (exact)    
+PASS   [V1] (a) mu.m = 0 (overlap stationarity, exact)         
+PASS   [V1] (a) sum mu = 1                                     
+PASS   [V1] (a) mu_+1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.11000 +/- 2.00e-6]; Arb lower bound 0.08504 (upper of min 0.08579)
+PASS   [V1] (a) mu_+1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.12615 +/- 4.78e-6]; Arb lower bound 0.1055 (upper of min 0.1064)
+PASS   [V1] (a) mu_-1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.38500 +/- 3.64e-6]; Arb lower bound 0.3676 (upper of min 0.3685)
+PASS   [V1] (a) mu_-1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.37885 +/- 3.14e-6]; Arb lower bound 0.3781 (upper of min 0.3781)
+PASS   [V1] (a) 1 - g.L > 0, L=(1, 1, 1, -1)                   [exact+arb] norm root-free; value at mid [0.14674 +/- 3.38e-6]; Arb lower bound 0.1059 (upper of min 0.1071)
+PASS   [V1] (a) 1 - g.L > 0, L=(1, 1, -1, 1)                   [exact+arb] norm root-free; value at mid [0.79788 +/- 3.71e-6]; Arb lower bound 0.7781 (upper of min 0.7792)
+PASS   [V1] (a) 1 - g.L > 0, L=(1, 1, -1, -1)                  [exact+arb] norm root-free; value at mid [0.94463 +/- 2.92e-6]; Arb lower bound 0.9108 (upper of min 0.9119)
+PASS   [V1] (a) 1 - g.L > 0, L=(1, -1, 1, 1)                   [exact+arb] norm root-free; value at mid [0.12795 +/- 4.46e-6]; Arb lower bound 0.06311 (upper of min 0.06466)
+PASS   [V1] (a) 1 - g.L > 0, L=(1, -1, 1, -1)                  [exact+arb] norm root-free; value at mid [1.9554 +/- 4.57e-6]; Arb lower bound 1.854 (upper of min 1.857)
+PASS   [V1] (a) 1 - g.L > 0, L=(1, -1, -1, -1)                 [exact+arb] norm root-free; value at mid [1.8274 +/- 4.10e-5]; Arb lower bound 1.791 (upper of min 1.792)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, 1, 1, 1)                   [exact+arb] norm root-free; value at mid [1.8274 +/- 4.10e-5]; Arb lower bound 1.791 (upper of min 1.792)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, 1, 1, -1)                  [exact+arb] norm root-free; value at mid [0.69673 +/- 2.12e-6]; Arb lower bound 0.6589 (upper of min 0.6607)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, 1, -1, 1)                  [exact+arb] norm root-free; value at mid [1.3479 +/- 2.76e-5]; Arb lower bound 1.234 (upper of min 1.239)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, 1, -1, -1)                 [exact+arb] norm root-free; value at mid [0.21716 +/- 3.59e-6]; Arb lower bound 0.0552 (upper of min 0.06093)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, -1, 1, 1)                  [exact+arb] norm root-free; value at mid [1.9554 +/- 4.57e-6]; Arb lower bound 1.854 (upper of min 1.857)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, -1, 1, -1)                 [exact+arb] norm root-free; value at mid [2.5054 +/- 1.59e-5]; Arb lower bound 2.471 (upper of min 2.472)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, -1, -1, 1)                 [exact+arb] norm root-free; value at mid [0.54999 +/- 1.27e-6]; Arb lower bound 0.4554 (upper of min 0.4595)
+PASS   [V1] (a) 1 - g.L > 0, L=(-1, -1, -1, -1)                [exact+arb] norm root-free; value at mid [1.1000 +/- 2.26e-5]; Arb lower bound 0.9109 (upper of min 0.9191)
+PASS   [V2] (a) normalisation g.p_theta = 1 (exact)            
+PASS   [V2] (a) facet saturation g.L = 1, L=(1, -1, -1, 1)     
+PASS   [V2] (a) facet saturation g.L = 1, L=(1, 1, 1, -1)      
+PASS   [V2] (a) g in span of slice generators gamma (exact)    
+PASS   [V2] (a) mu.m = 0 (overlap stationarity, exact)         
+PASS   [V2] (a) sum mu = 1                                     
+PASS   [V2] (a) mu_+1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.066602 +/- 7.65e-8]; Arb lower bound 0.05167 (upper of min 0.0526)
+PASS   [V2] (a) mu_+1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.22938 +/- 2.99e-6]; Arb lower bound 0.2293 (upper of min 0.2295)
+PASS   [V2] (a) mu_-1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.47464 +/- 4.05e-6]; Arb lower bound 0.453 (upper of min 0.454)
+PASS   [V2] (a) mu_-1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.22938 +/- 2.99e-6]; Arb lower bound 0.2293 (upper of min 0.2295)
+PASS   [V2] (a) 1 - g.L > 0, L=(1, 1, 1, 1)                    [exact+arb] norm root-free; value at mid [0.077471 +/- 4.35e-7]; Arb lower bound 0.03757 (upper of min 0.04041)
+PASS   [V2] (a) 1 - g.L > 0, L=(1, 1, -1, 1)                   [exact+arb] norm root-free; value at mid [1.1839 +/- 1.58e-5]; Arb lower bound 1.131 (upper of min 1.134)
+PASS   [V2] (a) 1 - g.L > 0, L=(1, 1, -1, -1)                  [exact+arb] norm root-free; value at mid [1.1064 +/- 4.44e-5]; Arb lower bound 1.093 (upper of min 1.094)
+PASS   [V2] (a) 1 - g.L > 0, L=(1, -1, 1, 1)                   [exact+arb] norm root-free; value at mid [0.077471 +/- 4.35e-7]; Arb lower bound 0.03757 (upper of min 0.04041)
+PASS   [V2] (a) 1 - g.L > 0, L=(1, -1, 1, -1)                  [exact+arb] norm root-free; value at mid [1.1839 +/- 1.58e-5]; Arb lower bound 1.131 (upper of min 1.134)
+PASS   [V2] (a) 1 - g.L > 0, L=(1, -1, -1, -1)                 [exact+arb] norm root-free; value at mid [1.1064 +/- 4.44e-5]; Arb lower bound 1.093 (upper of min 1.094)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, 1, 1, 1)                   [exact+arb] norm root-free; value at mid [2.2904 +/- 4.00e-5]; Arb lower bound 2.225 (upper of min 2.227)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, 1, 1, -1)                  [exact+arb] norm root-free; value at mid [0.81608 +/- 4.26e-6]; Arb lower bound 0.738 (upper of min 0.7424)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, 1, -1, 1)                  [exact+arb] norm root-free; value at mid 2.0000; Arb lower bound 2 (upper of min 2)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, 1, -1, -1)                 [exact+arb] norm root-free; value at mid [0.52572 +/- 4.20e-6]; Arb lower bound 0.3765 (upper of min 0.3832)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, -1, 1, 1)                  [exact+arb] norm root-free; value at mid [2.2904 +/- 4.00e-5]; Arb lower bound 2.225 (upper of min 2.227)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, -1, 1, -1)                 [exact+arb] norm root-free; value at mid 2.0000; Arb lower bound 2 (upper of min 2)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, -1, -1, 1)                 [exact+arb] norm root-free; value at mid [0.81608 +/- 4.26e-6]; Arb lower bound 0.738 (upper of min 0.7424)
+PASS   [V2] (a) 1 - g.L > 0, L=(-1, -1, -1, -1)                [exact+arb] norm root-free; value at mid [0.52572 +/- 4.20e-6]; Arb lower bound 0.3765 (upper of min 0.3832)
+PASS   [V1s] (a) normalisation g.p_theta = 1 (exact)           
+PASS   [V1s] (a) facet saturation g.L = 1, L=(1, -1, 1, 1)     
+PASS   [V1s] (a) facet saturation g.L = 1, L=(1, 1, 1, -1)     
+PASS   [V1s] (a) g in span of slice generators gamma (exact)   
+PASS   [V1s] (a) mu.m = 0 (overlap stationarity, exact)        
+PASS   [V1s] (a) sum mu = 1                                    
+PASS   [V1s] (a) mu_+1|0 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.11000 +/- 2.00e-6]; Arb lower bound 0.08504 (upper of min 0.08579)
+PASS   [V1s] (a) mu_+1|1 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.37885 +/- 3.14e-6]; Arb lower bound 0.3781 (upper of min 0.3781)
+PASS   [V1s] (a) mu_-1|0 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.38500 +/- 3.64e-6]; Arb lower bound 0.3676 (upper of min 0.3685)
+PASS   [V1s] (a) mu_-1|1 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.12615 +/- 4.78e-6]; Arb lower bound 0.1055 (upper of min 0.1064)
+PASS   [V1s] (a) 1 - g.L > 0, L=(1, 1, 1, 1)                   [exact+arb] norm root-free; value at mid [0.12795 +/- 4.46e-6]; Arb lower bound 0.06311 (upper of min 0.06466)
+PASS   [V1s] (a) 1 - g.L > 0, L=(1, 1, -1, 1)                  [exact+arb] norm root-free; value at mid [1.9554 +/- 4.57e-6]; Arb lower bound 1.854 (upper of min 1.857)
+PASS   [V1s] (a) 1 - g.L > 0, L=(1, 1, -1, -1)                 [exact+arb] norm root-free; value at mid [1.8274 +/- 4.10e-5]; Arb lower bound 1.791 (upper of min 1.792)
+PASS   [V1s] (a) 1 - g.L > 0, L=(1, -1, 1, -1)                 [exact+arb] norm root-free; value at mid [0.79788 +/- 3.71e-6]; Arb lower bound 0.7781 (upper of min 0.7792)
+PASS   [V1s] (a) 1 - g.L > 0, L=(1, -1, -1, 1)                 [exact+arb] norm root-free; value at mid [0.14674 +/- 3.38e-6]; Arb lower bound 0.1059 (upper of min 0.1071)
+PASS   [V1s] (a) 1 - g.L > 0, L=(1, -1, -1, -1)                [exact+arb] norm root-free; value at mid [0.94463 +/- 2.92e-6]; Arb lower bound 0.9108 (upper of min 0.9119)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, 1, 1, 1)                  [exact+arb] norm root-free; value at mid [1.9554 +/- 4.57e-6]; Arb lower bound 1.854 (upper of min 1.857)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, 1, 1, -1)                 [exact+arb] norm root-free; value at mid [0.54999 +/- 1.27e-6]; Arb lower bound 0.4554 (upper of min 0.4595)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, 1, -1, 1)                 [exact+arb] norm root-free; value at mid [2.5054 +/- 1.59e-5]; Arb lower bound 2.471 (upper of min 2.472)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, 1, -1, -1)                [exact+arb] norm root-free; value at mid [1.1000 +/- 2.26e-5]; Arb lower bound 0.9109 (upper of min 0.9191)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, -1, 1, 1)                 [exact+arb] norm root-free; value at mid [1.8274 +/- 4.10e-5]; Arb lower bound 1.791 (upper of min 1.792)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, -1, 1, -1)                [exact+arb] norm root-free; value at mid [1.3479 +/- 2.76e-5]; Arb lower bound 1.234 (upper of min 1.239)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, -1, -1, 1)                [exact+arb] norm root-free; value at mid [0.69673 +/- 2.12e-6]; Arb lower bound 0.6589 (upper of min 0.6607)
+PASS   [V1s] (a) 1 - g.L > 0, L=(-1, -1, -1, -1)               [exact+arb] norm root-free; value at mid [0.21716 +/- 3.59e-6]; Arb lower bound 0.0552 (upper of min 0.06093)
+PASS   [V3] (a) normalisation g.p_theta = 1 (exact)            
+PASS   [V3] (a) facet saturation g.L = 1, L=(1, -1, 1, 1)      
+PASS   [V3] (a) facet saturation g.L = 1, L=(-1, 1, 1, -1)     
+PASS   [V3] (a) g in span of slice generators gamma (exact)    
+PASS   [V3] (a) mu.m = 0 (overlap stationarity, exact)         
+PASS   [V3] (a) sum mu = 1                                     
+PASS   [V3] (a) mu_+1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.24467 +/- 5.50e-7]; Arb lower bound 0.195 (upper of min 0.1966)
+PASS   [V3] (a) mu_+1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.36791 +/- 2.11e-6]; Arb lower bound 0.3497 (upper of min 0.3503)
+PASS   [V3] (a) mu_-1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.10683 +/- 4.25e-6]; Arb lower bound 0.08764 (upper of min 0.0883)
+PASS   [V3] (a) mu_-1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.28060 +/- 3.11e-6]; Arb lower bound 0.2252 (upper of min 0.2273)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, 1, 1, 1)                    [exact+arb] norm root-free; value at mid [0.044211 +/- 2.40e-7]; Arb lower bound 0.01676 (upper of min 0.01747)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, 1, 1, -1)                   [exact+arb] norm root-free; value at mid [0.27569 +/- 2.62e-6]; Arb lower bound 0.2147 (upper of min 0.2166)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, 1, -1, 1)                   [exact+arb] norm root-free; value at mid [2.1746 +/- 2.20e-5]; Arb lower bound 2.126 (upper of min 2.127)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, 1, -1, -1)                  [exact+arb] norm root-free; value at mid [2.4061 +/- 1.87e-6]; Arb lower bound 2.324 (upper of min 2.326)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, -1, 1, -1)                  [exact+arb] norm root-free; value at mid [1.7747 +/- 2.53e-5]; Arb lower bound 1.661 (upper of min 1.666)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, -1, -1, 1)                  [exact+arb] norm root-free; value at mid [0.32639 +/- 6.37e-7]; Arb lower bound 0.2429 (upper of min 0.2455)
+PASS   [V3] (a) 1 - g.L > 0, L=(1, -1, -1, -1)                 [exact+arb] norm root-free; value at mid [2.1011 +/- 3.47e-5]; Arb lower bound 2.089 (upper of min 2.09)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, 1, 1, 1)                   [exact+arb] norm root-free; value at mid [0.67563 +/- 4.62e-6]; Arb lower bound 0.4945 (upper of min 0.4997)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, 1, -1, 1)                  [exact+arb] norm root-free; value at mid [1.8989 +/- 3.47e-5]; Arb lower bound 1.898 (upper of min 1.898)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, 1, -1, -1)                 [exact+arb] norm root-free; value at mid [1.2233 +/- 1.2e-8]; Arb lower bound 0.9718 (upper of min 0.9829)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, -1, 1, 1)                  [exact+arb] norm root-free; value at mid [0.63142 +/- 3.38e-6]; Arb lower bound 0.4777 (upper of min 0.4823)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, -1, 1, -1)                 [exact+arb] norm root-free; value at mid [1.4990 +/- 1.27e-5]; Arb lower bound 1.316 (upper of min 1.324)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, -1, -1, 1)                 [exact+arb] norm root-free; value at mid [0.050703 +/- 2.52e-7]; Arb lower bound 0.02821 (upper of min 0.02888)
+PASS   [V3] (a) 1 - g.L > 0, L=(-1, -1, -1, -1)                [exact+arb] norm root-free; value at mid [0.91827 +/- 2.75e-6]; Arb lower bound 0.5936 (upper of min 0.606)
+PASS   [V4] (a) normalisation g.p_theta = 1 (exact)            
+PASS   [V4] (a) facet saturation g.L = 1, L=(-1, 1, 1, -1)     
+PASS   [V4] (a) facet saturation g.L = 1, L=(-1, -1, -1, 1)    
+PASS   [V4] (a) g in span of slice generators gamma (exact)    
+PASS   [V4] (a) mu.m = 0 (overlap stationarity, exact)         
+PASS   [V4] (a) sum mu = 1                                     
+PASS   [V4] (a) mu_+1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.25038 +/- 1.54e-6]; Arb lower bound 0.1974 (upper of min 0.199)
+PASS   [V4] (a) mu_+1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.32729 +/- 4.19e-6]; Arb lower bound 0.291 (upper of min 0.2925)
+PASS   [V4] (a) mu_-1|0 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.095033 +/- 1.61e-7]; Arb lower bound 0.08083 (upper of min 0.0818)
+PASS   [V4] (a) mu_-1|1 > 0 on Theta                           [exact+arb] norm root-free; value at mid [0.32729 +/- 4.19e-6]; Arb lower bound 0.291 (upper of min 0.2925)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, 1, 1, 1)                    [exact+arb] norm root-free; value at mid [0.020331 +/- 4.60e-7]; Arb lower bound 0.007462 (upper of min 0.008637)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, 1, 1, -1)                   [exact+arb] norm root-free; value at mid [0.31069 +/- 6.02e-7]; Arb lower bound 0.2322 (upper of min 0.2354)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, 1, -1, 1)                   [exact+arb] norm root-free; value at mid 2.0000; Arb lower bound 2 (upper of min 2)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, 1, -1, -1)                  [exact+arb] norm root-free; value at mid [2.2904 +/- 4.00e-5]; Arb lower bound 2.225 (upper of min 2.227)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, -1, 1, 1)                   [exact+arb] norm root-free; value at mid [0.020331 +/- 4.60e-7]; Arb lower bound 0.007462 (upper of min 0.008637)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, -1, 1, -1)                  [exact+arb] norm root-free; value at mid 2.0000; Arb lower bound 2 (upper of min 2)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, -1, -1, 1)                  [exact+arb] norm root-free; value at mid [0.31069 +/- 6.02e-7]; Arb lower bound 0.2322 (upper of min 0.2354)
+PASS   [V4] (a) 1 - g.L > 0, L=(1, -1, -1, -1)                 [exact+arb] norm root-free; value at mid [2.2904 +/- 4.00e-5]; Arb lower bound 2.225 (upper of min 2.227)
+PASS   [V4] (a) 1 - g.L > 0, L=(-1, 1, 1, 1)                   [exact+arb] norm root-free; value at mid [0.60105 +/- 6.64e-7]; Arb lower bound 0.4569 (upper of min 0.4621)
+PASS   [V4] (a) 1 - g.L > 0, L=(-1, 1, -1, 1)                  [exact+arb] norm root-free; value at mid [1.6893 +/- 9.40e-6]; Arb lower bound 1.585 (upper of min 1.59)
+PASS   [V4] (a) 1 - g.L > 0, L=(-1, 1, -1, -1)                 [exact+arb] norm root-free; value at mid [1.0883 +/- 4.13e-5]; Arb lower bound 0.8084 (upper of min 0.8212)
+PASS   [V4] (a) 1 - g.L > 0, L=(-1, -1, 1, 1)                  [exact+arb] norm root-free; value at mid [0.60105 +/- 6.64e-7]; Arb lower bound 0.4569 (upper of min 0.4621)
+PASS   [V4] (a) 1 - g.L > 0, L=(-1, -1, 1, -1)                 [exact+arb] norm root-free; value at mid [1.6893 +/- 9.40e-6]; Arb lower bound 1.585 (upper of min 1.59)
+PASS   [V4] (a) 1 - g.L > 0, L=(-1, -1, -1, -1)                [exact+arb] norm root-free; value at mid [1.0883 +/- 4.13e-5]; Arb lower bound 0.8084 (upper of min 0.8212)
+PASS   [V3s] (a) normalisation g.p_theta = 1 (exact)           
+PASS   [V3s] (a) facet saturation g.L = 1, L=(1, 1, 1, 1)      
+PASS   [V3s] (a) facet saturation g.L = 1, L=(-1, -1, -1, 1)   
+PASS   [V3s] (a) g in span of slice generators gamma (exact)   
+PASS   [V3s] (a) mu.m = 0 (overlap stationarity, exact)        
+PASS   [V3s] (a) sum mu = 1                                    
+PASS   [V3s] (a) mu_+1|0 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.24467 +/- 5.50e-7]; Arb lower bound 0.195 (upper of min 0.1966)
+PASS   [V3s] (a) mu_+1|1 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.28060 +/- 3.11e-6]; Arb lower bound 0.2252 (upper of min 0.2273)
+PASS   [V3s] (a) mu_-1|0 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.10683 +/- 4.25e-6]; Arb lower bound 0.08764 (upper of min 0.0883)
+PASS   [V3s] (a) mu_-1|1 > 0 on Theta                          [exact+arb] norm root-free; value at mid [0.36791 +/- 2.11e-6]; Arb lower bound 0.3497 (upper of min 0.3503)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, 1, 1, -1)                  [exact+arb] norm root-free; value at mid [0.32639 +/- 6.37e-7]; Arb lower bound 0.2429 (upper of min 0.2455)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, 1, -1, 1)                  [exact+arb] norm root-free; value at mid [1.7747 +/- 2.53e-5]; Arb lower bound 1.661 (upper of min 1.666)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, 1, -1, -1)                 [exact+arb] norm root-free; value at mid [2.1011 +/- 3.47e-5]; Arb lower bound 2.089 (upper of min 2.09)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, -1, 1, 1)                  [exact+arb] norm root-free; value at mid [0.044211 +/- 2.40e-7]; Arb lower bound 0.01676 (upper of min 0.01747)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, -1, 1, -1)                 [exact+arb] norm root-free; value at mid [2.1746 +/- 2.20e-5]; Arb lower bound 2.126 (upper of min 2.127)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, -1, -1, 1)                 [exact+arb] norm root-free; value at mid [0.27569 +/- 2.62e-6]; Arb lower bound 0.2147 (upper of min 0.2166)
+PASS   [V3s] (a) 1 - g.L > 0, L=(1, -1, -1, -1)                [exact+arb] norm root-free; value at mid [2.4061 +/- 1.87e-6]; Arb lower bound 2.324 (upper of min 2.326)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, 1, 1, 1)                  [exact+arb] norm root-free; value at mid [0.63142 +/- 3.38e-6]; Arb lower bound 0.4777 (upper of min 0.4823)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, 1, 1, -1)                 [exact+arb] norm root-free; value at mid [0.050703 +/- 2.52e-7]; Arb lower bound 0.02821 (upper of min 0.02888)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, 1, -1, 1)                 [exact+arb] norm root-free; value at mid [1.4990 +/- 1.27e-5]; Arb lower bound 1.316 (upper of min 1.324)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, 1, -1, -1)                [exact+arb] norm root-free; value at mid [0.91827 +/- 2.75e-6]; Arb lower bound 0.5936 (upper of min 0.606)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, -1, 1, 1)                 [exact+arb] norm root-free; value at mid [0.67563 +/- 4.62e-6]; Arb lower bound 0.4945 (upper of min 0.4997)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, -1, 1, -1)                [exact+arb] norm root-free; value at mid [1.8989 +/- 3.47e-5]; Arb lower bound 1.898 (upper of min 1.898)
+PASS   [V3s] (a) 1 - g.L > 0, L=(-1, -1, -1, -1)               [exact+arb] norm root-free; value at mid [1.2233 +/- 1.2e-8]; Arb lower bound 0.9718 (upper of min 0.9829)
+PASS   hexagon: V1,V2,V1',V3,V4,V3' consecutive vertices share one facet point (6 distinct) 
+PASS   sigma fixes p_theta                                     
+PASS   [V1] (c) d0 is the slice dual: B_x(d0)+a e_x = 2 mu_{a|x} v_{a|x} 
+PASS   [V1] (c) F_{s0 s1}(c0) = 0 for all four sign pairs      
+PASS   [V1] (c) dF_{s0 s1}/dc (c0) = 0 for all four sign pairs (d1 forced) 
+PASS   [V1] (c) d1 uniquely determined (2x2 minor nonzero)     
+PASS   [V1s] (c) d0 is the slice dual: B_x(d0)+a e_x = 2 mu_{a|x} v_{a|x} 
+PASS   [V1s] (c) F_{s0 s1}(c0) = 0 for all four sign pairs     
+PASS   [V1s] (c) dF_{s0 s1}/dc (c0) = 0 for all four sign pairs (d1 forced) 
+PASS   [V1s] (c) d1 uniquely determined (2x2 minor nonzero)    
+PASS   [V3] (c) d0 is the slice dual: B_x(d0)+a e_x = 2 mu_{a|x} v_{a|x} 
+PASS   [V3] (c) F_{s0 s1}(c0) = 0 for all four sign pairs      
+PASS   [V3] (c) dF_{s0 s1}/dc (c0) = 0 for all four sign pairs (d1 forced) 
+PASS   [V3] (c) d1 uniquely determined (2x2 minor nonzero)     
+PASS   [V3s] (c) d0 is the slice dual: B_x(d0)+a e_x = 2 mu_{a|x} v_{a|x} 
+PASS   [V3s] (c) F_{s0 s1}(c0) = 0 for all four sign pairs     
+PASS   [V3s] (c) dF_{s0 s1}/dc (c0) = 0 for all four sign pairs (d1 forced) 
+PASS   [V3s] (c) d1 uniquely determined (2x2 minor nonzero)    
+PASS   [V1] (e) c=+1: tight local points with B0B1=+1: [(1, 1, 1, 1)] 
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(+1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [0.16167 +/- 2.81e-7]; Arb lower bound 0.01845 (upper of min 0.02476)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(+1,+1,-1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.6445 (upper of min 0.6488)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(+1,-1,+1) < 1      [exact+arb] norm root-free; value at mid [1.0445 +/- 1.64e-5]; Arb lower bound 0.8746 (upper of min 0.8824)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(+1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [0.91091 +/- 1.83e-6]; Arb lower bound 0.7076 (upper of min 0.7134)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(-1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [1.9891 +/- 1.08e-5]; Arb lower bound 1.856 (upper of min 1.863)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(-1,+1,-1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.036 (upper of min 0.03692)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(-1,-1,+1) < 1      [exact+arb] norm root-free; value at mid [2.8719 +/- 2.46e-5]; Arb lower bound 2.712 (upper of min 2.721)
+PASS   [V1] (e) c=+1 mixed term (a,a',eps)=(-1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [0.18345 +/- 1.69e-6]; Arb lower bound 0.1522 (upper of min 0.1529)
+PASS   [V1] (e) c=+1 eps*u_{+1|0}.f > 0 (tight L=(1, 1, 1, 1)) [arb] norm has 1 roots in interval; Arb lower bound 0.3223 (upper of min 0.3244)
+PASS   [V1] (e) c=+1 eps*v_{+1|1}.f > 0                        [exact+arb] norm root-free; value at mid [0.080835 +/- 1.41e-7]; Arb lower bound 0.009227 (upper of min 0.01238)
+PASS   [V1] (e) c=-1: tight local points with B0B1=-1: [(1, -1, -1, 1)] 
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(+1,+1,+1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.883 (upper of min 0.8834)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(+1,+1,-1) < 1      [exact+arb] norm root-free; value at mid [0.051749 +/- 5.00e-7]; Arb lower bound 0.02777 (upper of min 0.02851)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(+1,-1,+1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.07813 (upper of min 0.07864)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(+1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [1.8604 +/- 5.56e-7]; Arb lower bound 1.776 (upper of min 1.778)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(-1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [1.4429 +/- 3.27e-5]; Arb lower bound 1.363 (upper of min 1.366)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(-1,+1,-1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.5296 (upper of min 0.533)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(-1,-1,+1) < 1      [exact+arb] norm root-free; value at mid [0.64498 +/- 3.62e-6]; Arb lower bound 0.5849 (upper of min 0.5871)
+PASS   [V1] (e) c=-1 mixed term (a,a',eps)=(-1,-1,-1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 2.393 (upper of min 2.394)
+PASS   [V1] (e) c=-1 eps*u_{+1|0}.f > 0 (tight L=(1, -1, -1, 1)) [arb] norm has 1 roots in interval; Arb lower bound 0.03907 (upper of min 0.03932)
+PASS   [V1] (e) c=-1 eps*v_{-1|1}.f > 0                        [exact+arb] norm root-free; value at mid [0.93020 +/- 2.78e-7]; Arb lower bound 0.8878 (upper of min 0.889)
+PASS   [V3] (e) c=+1: tight local points with B0B1=+1: [(1, -1, 1, 1)] 
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(+1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [1.1608 +/- 2.98e-6]; Arb lower bound 0.8458 (upper of min 0.8604)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(+1,+1,-1) < 1      [exact+arb] norm root-free; value at mid [1.2895 +/- 6.40e-6]; Arb lower bound 0.9949 (upper of min 1.003)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(+1,-1,+1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.4669 (upper of min 0.4843)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(+1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [1.2453 +/- 4.85e-6]; Arb lower bound 0.9781 (upper of min 0.986)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(-1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [1.7922 +/- 2.64e-5]; Arb lower bound 1.659 (upper of min 1.667)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(-1,+1,-1) < 1      [exact+arb] norm root-free; value at mid [0.10671 +/- 1.75e-6]; Arb lower bound 0.0876 (upper of min 0.08813)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(-1,-1,+1) < 1      [exact+arb] norm root-free; value at mid [1.4872 +/- 6.40e-6]; Arb lower bound 1.28 (upper of min 1.291)
+PASS   [V3] (e) c=+1 mixed term (a,a',eps)=(-1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [0.062497 +/- 1.51e-8]; Arb lower bound 0.06136 (upper of min 0.06207)
+PASS   [V3] (e) c=+1 eps*u_{+1|0}.f > 0 (tight L=(1, -1, 1, 1)) [exact+arb] norm root-free; value at mid [0.62265 +/- 2.43e-6]; Arb lower bound 0.489 (upper of min 0.493)
+PASS   [V3] (e) c=+1 eps*v_{-1|1}.f > 0                        [arb] norm has 1 roots in interval; Arb lower bound 0.2334 (upper of min 0.2421)
+PASS   [V3] (e) c=-1: tight local points with B0B1=-1: [(-1, 1, 1, -1)] 
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(+1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [2.1647 +/- 3.31e-5]; Arb lower bound 2.103 (upper of min 2.106)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(+1,+1,-1) < 1      [arb] norm has 1 roots in interval; Arb lower bound 0.237 (upper of min 0.238)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(+1,-1,+1) < 1      [arb] norm has 2 roots in interval; Arb lower bound 0.2206 (upper of min 0.2241)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(+1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [1.7846 +/- 3.63e-5]; Arb lower bound 1.678 (upper of min 1.682)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(-1,+1,+1) < 1      [exact+arb] norm root-free; value at mid [1.8890 +/- 4.57e-5]; Arb lower bound 1.886 (upper of min 1.887)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(-1,+1,-1) < 1      [exact+arb] norm root-free; value at mid [0.0098890 +/- 1.48e-8]; Arb lower bound 0.009823 (upper of min 0.009951)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(-1,-1,+1) < 1      [exact+arb] norm root-free; value at mid [0.040814 +/- 2.67e-7]; Arb lower bound 0.00583 (upper of min 0.007518)
+PASS   [V3] (e) c=-1 mixed term (a,a',eps)=(-1,-1,-1) < 1      [exact+arb] norm root-free; value at mid [1.5089 +/- 2.37e-5]; Arb lower bound 1.333 (upper of min 1.341)
+PASS   [V3] (e) c=-1 eps*u_{-1|0}.f > 0 (tight L=(-1, 1, 1, -1)) [exact+arb] norm root-free; value at mid [0.0049445 +/- 7.37e-9]; Arb lower bound 0.004911 (upper of min 0.004976)
+PASS   [V3] (e) c=-1 eps*v_{+1|1}.f > 0                        [exact+arb] norm root-free; value at mid [0.94452 +/- 2.81e-6]; Arb lower bound 0.9431 (upper of min 0.9434)
+PASS   [V1s] (e) c=+1: tight local points with B0B1=+1: [(1, -1, 1, 1)] 
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(+1,+1,+1) < 1     [exact+arb] norm root-free; value at mid [1.0445 +/- 1.64e-5]; Arb lower bound 0.8746 (upper of min 0.8824)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(+1,+1,-1) < 1     [exact+arb] norm root-free; value at mid [0.91091 +/- 1.83e-6]; Arb lower bound 0.7076 (upper of min 0.7134)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(+1,-1,+1) < 1     [exact+arb] norm root-free; value at mid [0.16167 +/- 2.81e-7]; Arb lower bound 0.01845 (upper of min 0.02476)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(+1,-1,-1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.6445 (upper of min 0.6488)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(-1,+1,+1) < 1     [exact+arb] norm root-free; value at mid [2.8719 +/- 2.46e-5]; Arb lower bound 2.712 (upper of min 2.721)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(-1,+1,-1) < 1     [exact+arb] norm root-free; value at mid [0.18345 +/- 1.69e-6]; Arb lower bound 0.1522 (upper of min 0.1529)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(-1,-1,+1) < 1     [exact+arb] norm root-free; value at mid [1.9891 +/- 1.08e-5]; Arb lower bound 1.856 (upper of min 1.863)
+PASS   [V1s] (e) c=+1 mixed term (a,a',eps)=(-1,-1,-1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.036 (upper of min 0.03692)
+PASS   [V1s] (e) c=+1 eps*u_{+1|0}.f > 0 (tight L=(1, -1, 1, 1)) [arb] norm has 1 roots in interval; Arb lower bound 0.3223 (upper of min 0.3244)
+PASS   [V1s] (e) c=+1 eps*v_{-1|1}.f > 0                       [exact+arb] norm root-free; value at mid [0.080835 +/- 1.41e-7]; Arb lower bound 0.009227 (upper of min 0.01238)
+PASS   [V1s] (e) c=-1: tight local points with B0B1=-1: [(1, 1, 1, -1)] 
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(+1,+1,+1) < 1     [exact+arb] norm root-free; value at mid [1.8604 +/- 5.56e-7]; Arb lower bound 1.776 (upper of min 1.778)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(+1,+1,-1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.07813 (upper of min 0.07864)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(+1,-1,+1) < 1     [exact+arb] norm root-free; value at mid [0.051749 +/- 5.00e-7]; Arb lower bound 0.02777 (upper of min 0.02851)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(+1,-1,-1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.883 (upper of min 0.8834)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(-1,+1,+1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 2.393 (upper of min 2.394)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(-1,+1,-1) < 1     [exact+arb] norm root-free; value at mid [0.64498 +/- 3.62e-6]; Arb lower bound 0.5849 (upper of min 0.5871)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(-1,-1,+1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.5296 (upper of min 0.533)
+PASS   [V1s] (e) c=-1 mixed term (a,a',eps)=(-1,-1,-1) < 1     [exact+arb] norm root-free; value at mid [1.4429 +/- 3.27e-5]; Arb lower bound 1.363 (upper of min 1.366)
+PASS   [V1s] (e) c=-1 eps*u_{+1|0}.f > 0 (tight L=(1, 1, 1, -1)) [arb] norm has 1 roots in interval; Arb lower bound 0.03907 (upper of min 0.03932)
+PASS   [V1s] (e) c=-1 eps*v_{+1|1}.f > 0                       [exact+arb] norm root-free; value at mid [0.93020 +/- 2.78e-7]; Arb lower bound 0.8878 (upper of min 0.889)
+PASS   [V3s] (e) c=+1: tight local points with B0B1=+1: [(1, 1, 1, 1)] 
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(+1,+1,+1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.4669 (upper of min 0.4843)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(+1,+1,-1) < 1     [exact+arb] norm root-free; value at mid [1.2453 +/- 4.85e-6]; Arb lower bound 0.9781 (upper of min 0.986)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(+1,-1,+1) < 1     [exact+arb] norm root-free; value at mid [1.1608 +/- 2.98e-6]; Arb lower bound 0.8458 (upper of min 0.8604)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(+1,-1,-1) < 1     [exact+arb] norm root-free; value at mid [1.2895 +/- 6.40e-6]; Arb lower bound 0.9949 (upper of min 1.003)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(-1,+1,+1) < 1     [exact+arb] norm root-free; value at mid [1.4872 +/- 6.40e-6]; Arb lower bound 1.28 (upper of min 1.291)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(-1,+1,-1) < 1     [exact+arb] norm root-free; value at mid [0.062497 +/- 1.51e-8]; Arb lower bound 0.06136 (upper of min 0.06207)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(-1,-1,+1) < 1     [exact+arb] norm root-free; value at mid [1.7922 +/- 2.64e-5]; Arb lower bound 1.659 (upper of min 1.667)
+PASS   [V3s] (e) c=+1 mixed term (a,a',eps)=(-1,-1,-1) < 1     [exact+arb] norm root-free; value at mid [0.10671 +/- 1.75e-6]; Arb lower bound 0.0876 (upper of min 0.08813)
+PASS   [V3s] (e) c=+1 eps*u_{+1|0}.f > 0 (tight L=(1, 1, 1, 1)) [exact+arb] norm root-free; value at mid [0.62265 +/- 2.43e-6]; Arb lower bound 0.489 (upper of min 0.493)
+PASS   [V3s] (e) c=+1 eps*v_{+1|1}.f > 0                       [arb] norm has 1 roots in interval; Arb lower bound 0.2334 (upper of min 0.2421)
+PASS   [V3s] (e) c=-1: tight local points with B0B1=-1: [(-1, -1, -1, 1)] 
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(+1,+1,+1) < 1     [exact+arb] norm root-free; value at mid [1.7846 +/- 3.63e-5]; Arb lower bound 1.678 (upper of min 1.682)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(+1,+1,-1) < 1     [arb] norm has 2 roots in interval; Arb lower bound 0.2206 (upper of min 0.2241)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(+1,-1,+1) < 1     [arb] norm has 1 roots in interval; Arb lower bound 0.237 (upper of min 0.238)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(+1,-1,-1) < 1     [exact+arb] norm root-free; value at mid [2.1647 +/- 3.31e-5]; Arb lower bound 2.103 (upper of min 2.106)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(-1,+1,+1) < 1     [exact+arb] norm root-free; value at mid [1.5089 +/- 2.37e-5]; Arb lower bound 1.333 (upper of min 1.341)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(-1,+1,-1) < 1     [exact+arb] norm root-free; value at mid [0.040814 +/- 2.67e-7]; Arb lower bound 0.00583 (upper of min 0.007518)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(-1,-1,+1) < 1     [exact+arb] norm root-free; value at mid [0.0098890 +/- 1.48e-8]; Arb lower bound 0.009823 (upper of min 0.009951)
+PASS   [V3s] (e) c=-1 mixed term (a,a',eps)=(-1,-1,-1) < 1     [exact+arb] norm root-free; value at mid [1.8890 +/- 4.57e-5]; Arb lower bound 1.886 (upper of min 1.887)
+PASS   [V3s] (e) c=-1 eps*u_{-1|0}.f > 0 (tight L=(-1, -1, -1, 1)) [exact+arb] norm root-free; value at mid [0.0049445 +/- 7.37e-9]; Arb lower bound 0.004911 (upper of min 0.004976)
+PASS   [V3s] (e) c=-1 eps*v_{-1|1}.f > 0                       [exact+arb] norm root-free; value at mid [0.94452 +/- 2.81e-6]; Arb lower bound 0.9431 (upper of min 0.9434)
+PASS   [V2] curved branch: Q(u) == A2 (u - 2/r)^2 identically  
+PASS   [V2] u0 = 2/r corresponds to c0                         
+PASS   [V2] A2 = kappa^2 - beta^2 + nu^2 > 0                   [exact+arb] norm root-free; value at mid [0.20109 +/- 1.32e-6]; Arb lower bound 0.1826 (upper of min 0.1864)
+PASS   [V2] kappa < 1/2  (u1 < 2, i.e. c1 < 1)                 [arb] norm has 1 roots in interval; Arb lower bound 0.1345 (upper of min 0.1351)
+PASS   [V2] sign(a0) constant on Theta                         sign 1
+PASS   [V2] u1=|a0|/kappa < u0=2/r  (c1 < c0)                  [exact] norm root-free; value at mid [0.38145 +/- 3.13e-6]; Arb lower bound -0.004148 (upper of min 0.3179)
+PASS   [V2] 1 - kappa u > 0 at u0 (branch sign for squaring)   [exact+arb] norm root-free; value at mid [0.45875 +/- 4.03e-6]; Arb lower bound 0.4585 (upper of min 0.4589)
+PASS   [V2] (beta+sgn(a0)kappa)^2 < nu^2  (flat branch, relevant sign) [exact+arb] norm root-free; value at mid [0.021429 +/- 4.58e-7]; Arb lower bound 0.005862 (upper of min 0.01545)
+   info V2: the other sign, nu^2-(beta-sgn(a0)kappa)^2, has sign -1 on Theta (not needed)
+PASS   [V2] flat branch: |a0| + 2 nu = 1                       
+PASS   [V4] curved branch: Q(u) == A2 (u - 2/r)^2 identically  
+PASS   [V4] u0 = 2/r corresponds to c0                         
+PASS   [V4] A2 = kappa^2 - beta^2 + nu^2 > 0                   [exact+arb] norm root-free; value at mid [0.10924 +/- 3.16e-6]; Arb lower bound 0.07543 (upper of min 0.07966)
+PASS   [V4] kappa < 1/2  (u1 < 2, i.e. c1 < 1)                 [arb] norm has 1 roots in interval; Arb lower bound 0.2155 (upper of min 0.218)
+PASS   [V4] sign(a0) constant on Theta                         sign -1
+PASS   [V4] u1=|a0|/kappa < u0=2/r  (c1 < c0)                  [exact+arb] norm root-free; value at mid [0.85288 +/- 1.23e-6]; Arb lower bound 0.3751 (upper of min 0.8603)
+PASS   [V4] 1 - kappa u > 0 at u0 (branch sign for squaring)   [exact+arb] norm root-free; value at mid [0.65459 +/- 1.63e-6]; Arb lower bound 0.582 (upper of min 0.585)
+PASS   [V4] (beta+sgn(a0)kappa)^2 < nu^2  (flat branch, relevant sign) [exact+arb] norm root-free; value at mid [0.16352 +/- 4.66e-6]; Arb lower bound 0.1451 (upper of min 0.1551)
+   info V4: the other sign, nu^2-(beta-sgn(a0)kappa)^2, has sign -1 on Theta (not needed)
+PASS   [V4] flat branch: |a0| + 2 nu = 1                       
+PASS   (b) JSON p_theta == printed                             
+PASS   (b) JSON c0 == printed                                  
+PASS   (b) JSON m == printed m                                 
+PASS   [V1] (b) JSON g == printed g                            
+PASS   [V1] (b) JSON mu == mu solved from printed g            
+PASS   [V1] (b) JSON d0 == printed d0                          
+PASS   [V1] (b) JSON d1 == printed d1                          
+   info V1: 14/14 JSON "cons" entries are +-1x/2x some 1-g.L
+PASS   [V2] (b) JSON g == printed g                            
+PASS   [V2] (b) JSON mu == mu solved from printed g            
+PASS   [V2] (b) JSON d0 == hand tau(c0)(1,1)                   
+PASS   [V2] (b) JSON d1 == hand tau'(c0)(1,1)                  
+   info V2: 14/14 JSON "cons" entries are +-1x/2x some 1-g.L
+PASS   [V1s] (b) JSON g == printed g                           
+PASS   [V1s] (b) JSON mu == mu solved from printed g           
+PASS   [V1s] (b) JSON d0 == printed d0                         
+PASS   [V1s] (b) JSON d1 == printed d1                         
+   info V1s: 14/14 JSON "cons" entries are +-1x/2x some 1-g.L
+PASS   [V3] (b) JSON g == printed g                            
+PASS   [V3] (b) JSON mu == mu solved from printed g            
+PASS   [V3] (b) JSON d0 == printed d0                          
+PASS   [V3] (b) JSON d1 == printed d1                          
+   info V3: 14/14 JSON "cons" entries are +-1x/2x some 1-g.L
+PASS   [V4] (b) JSON g == printed g                            
+PASS   [V4] (b) JSON mu == mu solved from printed g            
+PASS   [V4] (b) JSON d0 == hand tau(c0)(1,1)                   
+PASS   [V4] (b) JSON d1 == hand tau'(c0)(1,1)                  
+   info V4: 14/14 JSON "cons" entries are +-1x/2x some 1-g.L
+PASS   [V3s] (b) JSON g == printed g                           
+PASS   [V3s] (b) JSON mu == mu solved from printed g           
+PASS   [V3s] (b) JSON d0 == printed d0                         
+PASS   [V3s] (b) JSON d1 == printed d1                         
+   info V3s: 14/14 JSON "cons" entries are +-1x/2x some 1-g.L
+PASS   [V1] (b) certs_v13.json (k,L,SM,SW) and R_jl == Table III (j-major order) 
+PASS   [V3] (b) certs_v13.json (k,L,SM,SW) and R_jl == Table III (j-major order) 
+summary {'V1': {'a': True, 'min_nonfacet_margin': 0.05520339057678026, 'c': True, 'e': True}, 'V2': {'a': True, 'min_nonfacet_margin': 0.03757244186427261}, 'V1s': {'a': True, 'min_nonfacet_margin': 0.05520339057678026, 'c': True, 'e': True}, 'V3': {'a': True, 'min_nonfacet_margin': 0.01676009597202432, 'c': True, 'e': True}, 'V4': {'a': True, 'min_nonfacet_margin': 0.007462273811146524}, 'V3s': {'a': True, 'min_nonfacet_margin': 0.01676009597202432, 'c': True, 'e': True}}
+elapsed 226.7 s

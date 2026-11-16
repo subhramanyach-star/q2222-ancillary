@@ -1,0 +1,7 @@
+(a) Theta = [pi/8, 3pi/16]: all 108 sign conditions strictly positive on every box: True (246 boxes, 0.2s)
+    smallest certified lower bounds: [(('V4', 'det', 1, 1, 1, 1), 9e-05), (('V4', 'det', 1, -1, 1, 1), 9e-05), (('V3', 'det', 1, 1, 1, 1), 0.00939), (('V3s', 'det', 1, -1, 1, 1), 0.01313), (('V3', 'det', -1, -1, -1, 1), 0.02189), (('V3s', 'det', -1, 1, 1, -1), 0.02508), (('V2', 'det', 1, 1, 1, 1), 0.03752), (('V2', 'det', 1, -1, 1, 1), 0.03752)]
+(b) numerator of 1 - g_V1.L, L=(-1,1,-1,-1), reduced:  a + b C + c r + d C r with
+    -8*C*r*s**2 + 8*C*r + 2*C*s**4 + 6*C*s**2 + 8*C - 2*r*s**6 + 16*r*s**4 - 38*r*s**2 - 72*r + 4*s**6 - 32*s**4 + 68*s**2 + 88
+    norm (product over C->+-C, r->+-r), factored in s:
+    16*s**4*(s**6 - 10*s**4 + 33*s**2 + 40)**3*(s**6 - 8*s**4 + 24*s**2 - 16)
+    factor deg 6 root s=0.955312501026 -> theta=0.635357582495 = 0.20224060 pi

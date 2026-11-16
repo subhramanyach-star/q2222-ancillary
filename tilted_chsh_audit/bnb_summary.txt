@@ -1,0 +1,2 @@
+V1 strips done 4096/4096 all ok: True exact tiling of S_Theta: True sub-strips: 11564 c-leaf boxes: 621827 tests: {'T0': 180710, 'T1': 940399, 'T2': 139579, 'T3+': 343, 'T3-': 10068, 'T3b-1': 1496, 'T3b+1': 12461} cpu s (sum of strips): 160 theta/pi range: [0.125000, 0.187500]
+V3 strips done 4096/4096 all ok: True exact tiling of S_Theta: True sub-strips: 11077 c-leaf boxes: 478046 tests: {'T0': 221711, 'T1': 1100730, 'T2': 151922, 'T3+': 0, 'T3-': 4861, 'T3b-1': 6216, 'T3b+1': 12288} cpu s (sum of strips): 201 theta/pi range: [0.125000, 0.187500]

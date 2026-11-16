@@ -1,0 +1,3 @@
+vgen c_V3l_negmid_0.json vertex=V3 pins={} prec=120 strips 0..0
+strip   0 x in [3/32, 25/256] (theta/pi ~ [0.093750, 0.097656]): {'ok': False, 'why': 'box', 'box': ['-218085119/268435456', '-1744680951/2147483648', '51986449/536870912', '831783185/8589934592']}
+RESULT c_V3l_negmid_0.json: ALL OK = False ; 0 boxes ; 22.2s

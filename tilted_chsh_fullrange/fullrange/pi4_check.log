@@ -1,0 +1,9 @@
+Wa    e=E/2:True b=dE:True |d|=rho:True angle(d)=-90.0000 deg  g=[0, 1 - sqrt(2)/2, 1/2 - sqrt(2)/2, -1/2 + sqrt(2)/2, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+Wb    e=E/2:True b=dE:True |d|=rho:True angle(d)=-135.0000 deg  g=[-1/2 + sqrt(2)/2, -1/2 + sqrt(2)/2, -1 + sqrt(2)/2, 0, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+V2    e=E/2:True b=dE:True |d|=rho:True angle(d)=180.0000 deg  g=[1 - sqrt(2)/2, 0, 1/2 - sqrt(2)/2, 1/2 - sqrt(2)/2, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+Wa_s  e=E/2:True b=dE:True |d|=rho:True angle(d)=135.0000 deg  g=[-1/2 + sqrt(2)/2, 1/2 - sqrt(2)/2, 0, -1 + sqrt(2)/2, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+Wb_s  e=E/2:True b=dE:True |d|=rho:True angle(d)=90.0000 deg  g=[0, -1 + sqrt(2)/2, -1/2 + sqrt(2)/2, 1/2 - sqrt(2)/2, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+V3    e=E/2:True b=dE:True |d|=rho:True angle(d)=45.0000 deg  g=[1/2 - sqrt(2)/2, 1/2 - sqrt(2)/2, 1 - sqrt(2)/2, 0, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+V4    e=E/2:True b=dE:True |d|=rho:True angle(d)=0.0000 deg  g=[-1 + sqrt(2)/2, 0, -1/2 + sqrt(2)/2, -1/2 + sqrt(2)/2, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+V3s   e=E/2:True b=dE:True |d|=rho:True angle(d)=-45.0000 deg  g=[1/2 - sqrt(2)/2, -1/2 + sqrt(2)/2, 0, 1 - sqrt(2)/2, sqrt(2)/4, sqrt(2)/4, sqrt(2)/4, -sqrt(2)/4]
+ALL MATCH O: True

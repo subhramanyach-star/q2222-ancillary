@@ -1,0 +1,42 @@
+vgen c_Wa.json vertex=Wa pins={1: [1, 1]} prec=120 strips 0..19
+  done strip 1: ok=True {'ok': True, 'nboxes': 4994, 'endpoint_boxes': 8}
+  done strip 0: ok=True {'ok': True, 'nboxes': 5915, 'endpoint_boxes': 8}
+  done strip 2: ok=True {'ok': True, 'nboxes': 4697, 'endpoint_boxes': 8}
+  done strip 3: ok=True {'ok': True, 'nboxes': 4164, 'endpoint_boxes': 8}
+  done strip 4: ok=True {'ok': True, 'nboxes': 3952, 'endpoint_boxes': 8}
+  done strip 5: ok=True {'ok': True, 'nboxes': 3731, 'endpoint_boxes': 8}
+  done strip 6: ok=True {'ok': True, 'nboxes': 3391, 'endpoint_boxes': 8}
+  done strip 7: ok=True {'ok': True, 'nboxes': 3096, 'endpoint_boxes': 8}
+  done strip 9: ok=True {'ok': True, 'nboxes': 2795, 'endpoint_boxes': 8}
+  done strip 8: ok=True {'ok': True, 'nboxes': 2947, 'endpoint_boxes': 8}
+  done strip 11: ok=True {'ok': True, 'nboxes': 2523, 'endpoint_boxes': 8}
+  done strip 10: ok=True {'ok': True, 'nboxes': 2639, 'endpoint_boxes': 8}
+  done strip 13: ok=True {'ok': True, 'nboxes': 2367, 'endpoint_boxes': 8}
+  done strip 12: ok=True {'ok': True, 'nboxes': 2456, 'endpoint_boxes': 8}
+  done strip 14: ok=True {'ok': True, 'nboxes': 2449, 'endpoint_boxes': 8}
+  done strip 15: ok=True {'ok': True, 'nboxes': 2420, 'endpoint_boxes': 8}
+  done strip 16: ok=True {'ok': True, 'nboxes': 2363, 'endpoint_boxes': 8}
+  done strip 17: ok=True {'ok': True, 'nboxes': 2445, 'endpoint_boxes': 8}
+  done strip 18: ok=True {'ok': True, 'nboxes': 2292, 'endpoint_boxes': 8}
+  done strip 19: ok=True {'ok': True, 'nboxes': 2225, 'endpoint_boxes': 8}
+strip   0 x in [632/3125, 20423/100000] (theta/pi ~ [0.202240, 0.204230]): {'ok': True, 'nboxes': 5915, 'endpoint_boxes': 8, 'tests': {'T3+': 1024, 'T0': 13903, 'T1': 7669, 'T2': 1063, 'T3-': 1}}
+strip   1 x in [20423/100000, 10311/50000] (theta/pi ~ [0.204230, 0.206220]): {'ok': True, 'nboxes': 4994, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 11497, 'T1': 6855, 'T2': 1112}}
+strip   2 x in [10311/50000, 20821/100000] (theta/pi ~ [0.206220, 0.208210]): {'ok': True, 'nboxes': 4697, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 10823, 'T1': 6400, 'T2': 1053}}
+strip   3 x in [20821/100000, 1051/5000] (theta/pi ~ [0.208210, 0.210200]): {'ok': True, 'nboxes': 4164, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 9089, 'T1': 6129, 'T2': 926}}
+strip   4 x in [1051/5000, 21219/100000] (theta/pi ~ [0.210200, 0.212190]): {'ok': True, 'nboxes': 3952, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 8577, 'T1': 5945, 'T2': 774}}
+strip   5 x in [21219/100000, 10709/50000] (theta/pi ~ [0.212190, 0.214180]): {'ok': True, 'nboxes': 3731, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 8001, 'T1': 5721, 'T2': 690}}
+strip   6 x in [10709/50000, 21617/100000] (theta/pi ~ [0.214180, 0.216170]): {'ok': True, 'nboxes': 3391, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 6927, 'T1': 5486, 'T2': 639}}
+strip   7 x in [21617/100000, 2727/12500] (theta/pi ~ [0.216170, 0.218160]): {'ok': True, 'nboxes': 3096, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 6042, 'T1': 5194, 'T2': 636}}
+strip   8 x in [2727/12500, 4403/20000] (theta/pi ~ [0.218160, 0.220150]): {'ok': True, 'nboxes': 2947, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5743, 'T1': 4889, 'T2': 644}}
+strip   9 x in [4403/20000, 11107/50000] (theta/pi ~ [0.220150, 0.222140]): {'ok': True, 'nboxes': 2795, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5422, 'T1': 4594, 'T2': 652}}
+strip  10 x in [11107/50000, 22413/100000] (theta/pi ~ [0.222140, 0.224130]): {'ok': True, 'nboxes': 2639, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5130, 'T1': 4254, 'T2': 660}}
+strip  11 x in [22413/100000, 5653/25000] (theta/pi ~ [0.224130, 0.226120]): {'ok': True, 'nboxes': 2523, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 4948, 'T1': 3977, 'T2': 655}}
+strip  12 x in [5653/25000, 22811/100000] (theta/pi ~ [0.226120, 0.228110]): {'ok': True, 'nboxes': 2456, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 4914, 'T1': 3734, 'T2': 664}}
+strip  13 x in [22811/100000, 2301/10000] (theta/pi ~ [0.228110, 0.230100]): {'ok': True, 'nboxes': 2367, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 4898, 'T1': 3388, 'T2': 670}}
+strip  14 x in [2301/10000, 23209/100000] (theta/pi ~ [0.230100, 0.232090]): {'ok': True, 'nboxes': 2449, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5506, 'T1': 3120, 'T2': 658}}
+strip  15 x in [23209/100000, 1463/6250] (theta/pi ~ [0.232090, 0.234080]): {'ok': True, 'nboxes': 2420, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5617, 'T1': 2882, 'T2': 669}}
+strip  16 x in [1463/6250, 23607/100000] (theta/pi ~ [0.234080, 0.236070]): {'ok': True, 'nboxes': 2363, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5556, 'T1': 2727, 'T2': 657}}
+strip  17 x in [23607/100000, 11903/50000] (theta/pi ~ [0.236070, 0.238060]): {'ok': True, 'nboxes': 2445, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 6044, 'T1': 2563, 'T2': 661}}
+strip  18 x in [11903/50000, 4801/20000] (theta/pi ~ [0.238060, 0.240050]): {'ok': True, 'nboxes': 2292, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5615, 'T1': 2423, 'T2': 618}}
+strip  19 x in [4801/20000, 6051/25000] (theta/pi ~ [0.240050, 0.242040]): {'ok': True, 'nboxes': 2225, 'endpoint_boxes': 8, 'tests': {'T3+': 512, 'T0': 5514, 'T1': 2271, 'T2': 603}}
+RESULT c_Wa.json: ALL OK = True ; 63861 boxes ; 86.9s

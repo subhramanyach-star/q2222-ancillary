@@ -1,0 +1,8 @@
+== V1
+   sanity at theta=pi/8 (F and F_c at c0 must enclose 0): [('[+/- 1.75e-31]', '[+/- 5.26e-31]'), ('[+/- 1.93e-31]', '[+/- 4.37e-31]'), ('[+/- 1.85e-31]', '[+/- 3.50e-31]'), ('[+/- 2.03e-31]', '[+/- 2.61e-31]')]
+   endpoint lemma on Theta: True (256 theta-boxes, 0.0s)
+   B&B on [-1,1] x Theta: ALL ACCEPTED = True ; 508798 accepted boxes ; 38.3s
+== V3
+   sanity at theta=pi/8 (F and F_c at c0 must enclose 0): [('[+/- 2.55e-31]', '[+/- 3.18e-31]'), ('[+/- 2.53e-31]', '[+/- 3.20e-31]'), ('[+/- 2.51e-31]', '[+/- 4.07e-31]'), ('[+/- 2.50e-31]', '[+/- 4.09e-31]')]
+   endpoint lemma on Theta: True (1160 theta-boxes, 0.2s)
+   B&B on [-1,1] x Theta: ALL ACCEPTED = True ; 4853223 accepted boxes ; 347.6s

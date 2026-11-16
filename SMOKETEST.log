@@ -1,0 +1,10 @@
+anc_v18 smoke test from a fresh unzip of anc_v18.zip, 2026-10-25 06:22 HKT
+commands: md5sum -c; chsh_variants/verify_variants.py; verify_extra/verify_lower.py; lossycone/verify_t4_rates.py; lossycone/tamper.py (count REJECTED); lossycone/vpt_t4.py
+HASH_OK
+min margin 3.200e-03 at eta = 0.980
+ALL OK = True
+ALL OK = True (119 files)
+grid-point gains: 8.87% .. 18.01%
+ALL OK = True (112 points)
+5
+RESULT ALL OK = True

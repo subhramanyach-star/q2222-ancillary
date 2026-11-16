@@ -1,0 +1,24 @@
+wd_eta0.7515_q0.999-0.997 eta=1503/2000 wd v=999/1000 p=997/1000  can=2.02386746  c2=1.75111451  margin=2.728e-01  OK
+wd_eta0.755_q0.999-0.997 eta=151/200 wd v=999/1000 p=997/1000  can=2.02689933  c2=1.75802006  margin=2.689e-01  OK
+wd_eta0.763_q0.999-0.997 eta=763/1000 wd v=999/1000 p=997/1000  can=2.03461197  c2=1.77343635  margin=2.612e-01  OK
+wd_eta0.774_q0.99-1.0 eta=387/500 wd v=99/100 p=1  can=2.02968053  c2=1.77671753  margin=2.530e-01  OK
+wd_eta0.7865_q0.995-0.99 eta=1573/2000 wd v=199/200 p=99/100  can=2.05552356  c2=1.80812683  margin=2.474e-01  OK
+wd_eta0.841_q0.994-0.991 eta=841/1000 wd v=497/500 p=991/1000  can=2.16077620  c2=1.96115990  margin=1.996e-01  OK
+wd_eta0.8749_q0.9936-1.0 eta=8749/10000 wd v=621/625 p=1  can=2.25832378  c2=2.13374247  margin=1.246e-01  OK
+wd_eta0.8749_q1.0-0.9768 eta=8749/10000 wd v=1 p=1221/1250  can=2.26634263  c2=2.14280931  margin=1.235e-01  OK
+white eta=3/4 white v=99/100 p=1  can=2.00560776  c2=1.73125001  margin=2.744e-01  OK
+white eta=4/5 white v=99/100 p=1  can=2.06756349  c2=1.82080001  margin=2.468e-01  OK
+white eta=17/20 white v=99/100 p=1  can=2.17722305  c2=1.99887163  margin=1.784e-01  OK
+white eta=9/10 white v=99/100 p=1  can=2.33623473  c2=2.25668433  margin=7.955e-02  OK
+white eta=19/20 white v=99/100 p=1  can=2.54409833  c2=2.52419894  margin=1.990e-02  OK
+white eta=3/4 white v=1 p=1  can=2.02460380  c2=1.75000001  margin=2.746e-01  OK
+white eta=4/5 white v=1 p=1  can=2.08763989  c2=1.84000001  margin=2.476e-01  OK
+white eta=9/10 white v=1 p=1  can=2.35963104  c2=2.27968114  margin=7.995e-02  OK
+deph eta=3/4 deph v=1 p=24/25  can=2.02361965  c2=1.75000001  margin=2.736e-01  OK
+deph eta=4/5 deph v=1 p=24/25  can=2.08413429  c2=1.84000001  margin=2.441e-01  OK
+deph eta=17/20 deph v=1 p=24/25  can=2.19081023  c2=2.01513613  margin=1.757e-01  OK
+deph eta=9/10 deph v=1 p=24/25  can=2.34524579  c2=2.26689389  margin=7.835e-02  OK
+deph eta=19/20 deph v=1 p=24/25  can=2.54695595  c2=2.52735655  margin=1.960e-02  OK
+deph eta=3/4 deph v=1 p=99/100  can=2.02435776  c2=1.75000001  margin=2.744e-01  OK
+deph eta=9/10 deph v=1 p=99/100  can=2.35603473  c2=2.27648433  margin=7.955e-02  OK
+ALL OK = True n= 23 min_margin= 0.019599407453788444

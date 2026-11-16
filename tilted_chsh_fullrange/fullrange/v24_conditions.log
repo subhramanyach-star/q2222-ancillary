@@ -1,0 +1,11 @@
+V2 sgn(a0) sign on (0,1): 1  at s=1: 1
+V2 1/2-kappa sign on (0,1): 1  at s=1: 1
+V2 2kappa^2(c0+1)-a0^2 [<=> c1<c0] sign on (0,1): 1  at s=1: 1
+V2 nu^2-(beta+sgn kappa)^2 sign on (0,1): 1  at s=1: 1
+V2 A2 sign on (0,1): 1  at s=1: 1
+V4 sgn(a0) sign on (0,1): 1  at s=1: 1
+V4 1/2-kappa sign on (0,1): 1  at s=1: 1
+V4 2kappa^2(c0+1)-a0^2 [<=> c1<c0] sign on (0,1): 1  at s=1: 1
+V4 nu^2-(beta+sgn kappa)^2 sign on (0,1): 1  at s=1: 1
+V4 A2 sign on (0,1): 1  at s=1: 1
+V2/V4 CONDITIONS OK on (0,1]: True

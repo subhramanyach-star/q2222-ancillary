@@ -1,0 +1,17 @@
+I d=0.0500 s=2.09733: active True m=[ 0.050104 -0.049854  0.050104 -0.049854] m0*m1<0 True nV=4 tight=[['++++', '+--+'], ['++++', '-++-'], ['+--+', '----'], ['-++-', '----']] mu-tight=[[], [], [], []] centre==I/IQ True Pp=p True F,P-invariant True single orbit True
+I d=0.2000 s=2.34955: active True m=[ 0.206833 -0.190506  0.206833 -0.190506] m0*m1<0 True nV=4 tight=[['++++', '+--+'], ['++++', '-++-'], ['+--+', '----'], ['-++-', '----']] mu-tight=[[], [], [], []] centre==I/IQ True Pp=p True F,P-invariant True single orbit True
+I d=0.2618 s=2.43185: active True m=[ 0.277401 -0.240237  0.277401 -0.240237] m0*m1<0 True nV=4 tight=[['++++', '+--+'], ['++++', '-++-'], ['+--+', '----'], ['-++-', '----']] mu-tight=[[], [], [], []] centre==I/IQ True Pp=p True F,P-invariant True single orbit True
+I d=0.4000 s=2.55948: active True m=[ 0.459028 -0.319808  0.459028 -0.319808] m0*m1<0 True nV=4 tight=[['++++', '+--+'], ['++++', '-++-'], ['+--+', '----'], ['-++-', '----']] mu-tight=[[], [], [], []] centre==I/IQ True Pp=p True F,P-invariant True single orbit True
+I d=0.5236 s=2.59808: active True m=[ 0.666667 -0.333333  0.666667 -0.333333] m0*m1<0 True nV=4 tight=[['++++', '+--+'], ['++++', '-++-'], ['+--+', '----'], ['-++-', '----']] mu-tight=[[], [], [], []] centre==I/IQ True Pp=p True F,P-invariant True single orbit True
+J gam=0.0000 mu=0.8660: active True m0*m1<0 True nV=4 centre==J/8mu^3 True Jf.p=1.000000000000
+J gam=0.1000 mu=0.8118: active True m0*m1<0 True nV=4 centre==J/8mu^3 True Jf.p=1.000000000000
+J gam=0.2618 mu=0.7071: active True m0*m1<0 True nV=8 centre==J/8mu^3 True Jf.p=1.000000000000
+J gam=0.3000 mu=0.6796: active True m0*m1<0 True nV=8 centre==J/8mu^3 True Jf.p=1.000000000000
+J gam=0.4500 mu=0.5623: active True m0*m1<0 True nV=6 centre==J/8mu^3 True Jf.p=1.000000000000
+perfect key al=1.047 be=2.094: active True m=[0. 1. 0. 1.] formula 1.000000
+perfect key al=0.400 be=1.100: active True m=[0.       0.315858 0.       0.315858] formula 0.315858
+perfect key al=2.000 be=0.700: active True m=[ 0.       -2.111148  0.       -2.111148] formula -2.111148
+I d=0.050 closed-form W1..W4 match enumeration: True ; W1 tight ['-++-', '----'] ; W2 tight ['+--+', '----']
+I d=0.200 closed-form W1..W4 match enumeration: True ; W1 tight ['-++-', '----'] ; W2 tight ['+--+', '----']
+I d=0.400 closed-form W1..W4 match enumeration: True ; W1 tight ['-++-', '----'] ; W2 tight ['+--+', '----']
+I d=0.524 closed-form W1..W4 match enumeration: True ; W1 tight ['-++-', '----'] ; W2 tight ['+--+', '----']

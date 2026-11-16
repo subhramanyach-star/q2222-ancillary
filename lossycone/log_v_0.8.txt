@@ -1,0 +1,8 @@
+eta 0.8: q, c0, cones active, 5 vertices re-derived exactly (exhaustive pair enumeration)
+  vertex 0 tight [(1, 1, 1, 1), (1, -1, -1, 1)]: {'ok': True, 'nboxes': 160, 'tests': {'T3+': 1, 'T0': 301, 'T1': 324, 'T2': 13, 'T3-': 1}, 'endpoint_min': '0'}
+  vertex 1 tight [(1, 1, 1, 1), (-1, 1, 1, -1)]: {'ok': True, 'nboxes': 138, 'tests': {'T3+': 1, 'T0': 312, 'T1': 223, 'T2': 15, 'T3-': 1}, 'endpoint_min': '0'}
+  vertex 2 tight [(1, 1, 1, -1), (1, -1, 1, 1)]: {'ok': True, 'nboxes': 127, 'tests': {'T0': 300, 'T3+': 1, 'T1': 194, 'T2': 12, 'T3-': 1}, 'endpoint_min': '0'}
+  vertex 3 tight [(1, 1, 1, -1), (1, -1, -1, 1)]: {'ok': True, 'nboxes': 100, 'tests': {'T0': 182, 'T1': 201, 'T2': 15, 'T3-': 2}, 'endpoint_min': '0'}
+  vertex 4 tight [(1, -1, 1, 1), (-1, 1, 1, -1)]: {'ok': True, 'nboxes': 108, 'tests': {'T0': 244, 'T3+': 1, 'T1': 167, 'T2': 19, 'T3-': 1}, 'endpoint_min': '0'}
+eta 0.8 done in 2.5s
+RESULT ALL OK = True

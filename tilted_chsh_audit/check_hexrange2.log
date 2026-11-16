@@ -1,0 +1,12 @@
+Theta all 108 proved > 0: True
+   min 7.928e-03  V4   1-g.L(1, -1, 1, 1)     at theta=0.12500 pi  proved=True (norm root-free; value at mid [0.020331 +/- 4.60e-7])
+   min 7.928e-03  V4   1-g.L(1, 1, 1, 1)      at theta=0.12500 pi  proved=True (norm root-free; value at mid [0.020331 +/- 4.60e-7])
+   min 1.685e-02  V3   1-g.L(1, 1, 1, 1)      at theta=0.12500 pi  proved=True (norm root-free; value at mid [0.044211 +/- 2.40e-7])
+   min 1.685e-02  V3s  1-g.L(1, -1, 1, 1)     at theta=0.12500 pi  proved=True (norm root-free; value at mid [0.044211 +/- 2.40e-7])
+   min 2.827e-02  V3   1-g.L(-1, -1, -1, 1)   at theta=0.12500 pi  proved=True (norm root-free; value at mid [0.050703 +/- 2.52e-7])
+wide all 108 proved > 0: True
+   min 1.414e-04  V1   1-g.L(-1, 1, -1, -1)   at theta=0.20220 pi  proved=True (norm root-free; value at mid [0.39974 +/- 5.61e-7])
+   min 1.414e-04  V1s  1-g.L(-1, -1, -1, -1)  at theta=0.20220 pi  proved=True (norm root-free; value at mid [0.39974 +/- 5.61e-7])
+   min 1.914e-04  V4   1-g.L(1, -1, 1, 1)     at theta=0.06250 pi  proved=True (norm root-free; value at mid [0.0055912 +/- 3.90e-8])
+   min 1.914e-04  V4   1-g.L(1, 1, 1, 1)      at theta=0.06250 pi  proved=True (norm root-free; value at mid [0.0055912 +/- 3.90e-8])
+   min 3.897e-04  V3   1-g.L(1, 1, 1, 1)      at theta=0.06250 pi  proved=True (norm root-free; value at mid [0.011807 +/- 8.69e-8])

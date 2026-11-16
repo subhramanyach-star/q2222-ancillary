@@ -1,0 +1,34 @@
+{
+ "V1": {
+  "a": true,
+  "min_nonfacet_margin": 0.05520339057678026,
+  "c": true,
+  "e": true
+ },
+ "V2": {
+  "a": true,
+  "min_nonfacet_margin": 0.03757244186427261
+ },
+ "V1s": {
+  "a": true,
+  "min_nonfacet_margin": 0.05520339057678026,
+  "c": true,
+  "e": true
+ },
+ "V3": {
+  "a": true,
+  "min_nonfacet_margin": 0.01676009597202432,
+  "c": true,
+  "e": true
+ },
+ "V4": {
+  "a": true,
+  "min_nonfacet_margin": 0.007462273811146524
+ },
+ "V3s": {
+  "a": true,
+  "min_nonfacet_margin": 0.01676009597202432,
+  "c": true,
+  "e": true
+ }
+}

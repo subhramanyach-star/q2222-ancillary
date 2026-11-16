@@ -1,0 +1,4 @@
+I W1 ('-++-', '----') consistency 0 non-positive conditions: {}
+I W2 ('+--+', '----') consistency 0 non-positive conditions: {}
+I W3 ('++++', '+--+') consistency 0 non-positive conditions: {}
+I W4 ('++++', '-++-') consistency 0 non-positive conditions: {}

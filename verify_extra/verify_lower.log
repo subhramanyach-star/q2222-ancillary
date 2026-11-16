@@ -1,0 +1,120 @@
+wapcone eta0.75_comb.json      honest>=omega True  H_lo >= 0.009522 (stored 0.009522)  OK
+wapcone eta0.75_full.json      honest>=omega True  H_lo >= 0.009847 (stored 0.009847)  OK
+wapcone eta0.75_wap.json       honest>=omega True  H_lo >= 0.009041 (stored 0.009041)  OK
+wapcone eta0.75_wapcone.json   honest>=omega True  H_lo >= 0.009079 (stored 0.009079)  OK
+wapcone eta0.75_wappush.json   honest>=omega True  H_lo >= 0.009804 (stored 0.009804)  OK
+wapcone eta0.85_comb.json      honest>=omega True  H_lo >= 0.090009 (stored 0.090009)  OK
+wapcone eta0.85_full.json      honest>=omega True  H_lo >= 0.095105 (stored 0.095105)  OK
+wapcone eta0.85_wap.json       honest>=omega True  H_lo >= 0.085560 (stored 0.085560)  OK
+wapcone eta0.85_wapcone.json   honest>=omega True  H_lo >= 0.085780 (stored 0.085780)  OK
+wapcone eta0.85_wappush.json   honest>=omega True  H_lo >= 0.094967 (stored 0.094967)  OK
+wapcone eta0.8_comb.json       honest>=omega True  H_lo >= 0.036053 (stored 0.036053)  OK
+wapcone eta0.8_full.json       honest>=omega True  H_lo >= 0.037864 (stored 0.037864)  OK
+wapcone eta0.8_wap.json        honest>=omega True  H_lo >= 0.033995 (stored 0.033995)  OK
+wapcone eta0.8_wapcone.json    honest>=omega True  H_lo >= 0.034153 (stored 0.034153)  OK
+wapcone eta0.8_wappush.json    honest>=omega True  H_lo >= 0.037760 (stored 0.037760)  OK
+wapcone eta0.95_comb.json      honest>=omega True  H_lo >= 0.374280 (stored 0.374280)  OK
+wapcone eta0.95_full.json      honest>=omega True  H_lo >= 0.016343 (stored 0.016343)  OK
+wapcone eta0.95_wap.json       honest>=omega True  H_lo >= 0.366937 (stored 0.366937)  OK
+wapcone eta0.95_wapcone.json   honest>=omega True  H_lo >= 0.367053 (stored 0.367053)  OK
+wapcone eta0.95_wappush.json   honest>=omega True  H_lo >= 0.029214 (stored 0.029214)  OK
+wapcone eta0.98_comb.json      honest>=omega True  H_lo >= 0.587046 (stored 0.587046)  OK
+wapcone eta0.98_full.json      honest>=omega True  H_lo >= 0.597368 (stored 0.597368)  OK
+wapcone eta0.98_wap.json       honest>=omega True  H_lo >= 0.580212 (stored 0.580212)  OK
+wapcone eta0.98_wapcone.json   honest>=omega True  H_lo >= 0.580791 (stored 0.580791)  OK
+wapcone eta0.98_wappush.json   honest>=omega True  H_lo >= 0.593896 (stored 0.593896)  OK
+wapcone eta0.9_comb.json       honest>=omega True  H_lo >= 0.186750 (stored 0.186750)  OK
+wapcone eta0.9_full.json       honest>=omega True  H_lo >= 0.017497 (stored 0.017497)  OK
+wapcone eta0.9_wap.json        honest>=omega True  H_lo >= 0.182071 (stored 0.182071)  OK
+wapcone eta0.9_wapcone.json    honest>=omega True  H_lo >= 0.182191 (stored 0.182191)  OK
+wapcone eta0.9_wappush.json    honest>=omega True  H_lo >= 0.010836 (stored 0.010836)  OK
+noise deph_eta0.76_q0.96.json      S_up exact True  every CHSH <= 0.011877  tilted >= 0.008023  cone >= 0.008112  OK
+noise deph_eta0.76_q0.97.json      S_up exact True  every CHSH <= 0.012003  tilted >= 0.009131  cone >= 0.009241  OK
+noise deph_eta0.76_q0.98.json      S_up exact True  every CHSH <= 0.012129  tilted >= 0.010311  cone >= 0.010446  OK
+noise deph_eta0.76_q0.99.json      S_up exact True  every CHSH <= 0.012256  tilted >= 0.011561  cone >= 0.011725  OK
+noise deph_eta0.76_q0.995.json     S_up exact True  every CHSH <= 0.012319  tilted >= 0.012213  cone >= 0.012392  OK
+noise deph_eta0.84_q0.85.json      S_up exact True  every CHSH <= 0.058263  tilted >= 0.027663  cone >= 0.028274  OK
+noise deph_eta0.84_q0.9.json       S_up exact True  every CHSH <= 0.062062  tilted >= 0.040532  cone >= 0.041675  OK
+noise deph_eta0.84_q0.93.json      S_up exact True  every CHSH <= 0.064365  tilted >= 0.049369  cone >= 0.050949  OK
+noise deph_eta0.84_q0.95.json      S_up exact True  every CHSH <= 0.065909  tilted >= 0.055734  cone >= 0.057662  OK
+noise deph_eta0.84_q0.96.json      S_up exact True  every CHSH <= 0.066684  tilted >= 0.059061  cone >= 0.061181  OK
+noise deph_eta0.84_q0.97.json      S_up exact True  every CHSH <= 0.067461  tilted >= 0.062486  cone >= 0.064812  OK
+noise deph_eta0.84_q0.98.json      S_up exact True  every CHSH <= 0.068239  tilted >= 0.066011  cone >= 0.068556  OK
+noise deph_eta0.84_q0.99.json      S_up exact True  every CHSH <= 0.069020  tilted >= 0.069636  cone >= 0.072416  OK
+noise deph_eta0.84_q0.995.json     S_up exact True  every CHSH <= 0.069411  tilted >= 0.071486  cone >= 0.074389  OK
+noise deph_eta0.88_q0.85.json      S_up exact True  every CHSH <= 0.104990  tilted >= 0.064272  cone >= 0.066467  OK
+noise deph_eta0.88_q0.9.json       S_up exact True  every CHSH <= 0.112405  tilted >= 0.084344  cone >= 0.087747  OK
+noise deph_eta0.88_q0.93.json      S_up exact True  every CHSH <= 0.116935  tilted >= 0.097801  cone >= 0.102128  OK
+noise deph_eta0.88_q0.95.json      S_up exact True  every CHSH <= 0.119991  tilted >= 0.107407  cone >= 0.112447  OK
+noise deph_eta0.88_q0.96.json      S_up exact True  every CHSH <= 0.121529  tilted >= 0.112411  cone >= 0.117840  OK
+noise deph_eta0.88_q0.97.json      S_up exact True  every CHSH <= 0.123075  tilted >= 0.117553  cone >= 0.123395  OK
+noise deph_eta0.88_q0.98.json      S_up exact True  every CHSH <= 0.124628  tilted >= 0.122839  cone >= 0.129119  OK
+noise deph_eta0.88_q0.99.json      S_up exact True  every CHSH <= 0.126188  tilted >= 0.128272  cone >= 0.135018  OK
+noise deph_eta0.88_q0.995.json     S_up exact True  every CHSH <= 0.126971  tilted >= 0.131046  cone >= 0.138035  OK
+noise deph_eta0.8_q0.85.json       S_up exact True  every CHSH <= 0.028182  tilted >= 0.007917  cone >= 0.007999  OK
+noise deph_eta0.8_q0.9.json        S_up exact True  every CHSH <= 0.029926  tilted >= 0.014906  cone >= 0.015142  OK
+noise deph_eta0.8_q0.93.json       S_up exact True  every CHSH <= 0.030977  tilted >= 0.020102  cone >= 0.020488  OK
+noise deph_eta0.8_q0.95.json       S_up exact True  every CHSH <= 0.031680  tilted >= 0.023975  cone >= 0.024491  OK
+noise deph_eta0.8_q0.96.json       S_up exact True  every CHSH <= 0.032032  tilted >= 0.026033  cone >= 0.026625  OK
+noise deph_eta0.8_q0.97.json       S_up exact True  every CHSH <= 0.032384  tilted >= 0.028172  cone >= 0.028847  OK
+noise deph_eta0.8_q0.98.json       S_up exact True  every CHSH <= 0.032737  tilted >= 0.030392  cone >= 0.031158  OK
+noise deph_eta0.8_q0.99.json       S_up exact True  every CHSH <= 0.033091  tilted >= 0.032694  cone >= 0.033557  OK
+noise deph_eta0.8_q0.995.json      S_up exact True  every CHSH <= 0.033267  tilted >= 0.033875  cone >= 0.034790  OK
+noise deph_eta0.92_q0.85.json      S_up exact True  every CHSH <= 0.176072  tilted >= 0.123900  cone >= 0.129182  OK
+noise deph_eta0.92_q0.9.json       S_up exact True  every CHSH <= 0.190095  tilted >= 0.153784  cone >= 0.161209  OK
+noise deph_eta0.92_q0.93.json      S_up exact True  every CHSH <= 0.198796  tilted >= 0.173896  cone >= 0.182934  OK
+noise deph_eta0.92_q0.95.json      S_up exact True  every CHSH <= 0.204722  tilted >= 0.188347  cone >= 0.198637  OK
+noise deph_eta0.92_q0.96.json      S_up exact True  every CHSH <= 0.207725  tilted >= 0.195914  cone >= 0.206895  OK
+noise deph_eta0.92_q0.97.json      S_up exact True  every CHSH <= 0.210754  tilted >= 0.203727  cone >= 0.215448  OK
+noise deph_eta0.92_q0.98.json      S_up exact True  every CHSH <= 0.213810  tilted >= 0.211797  cone >= 0.224313  OK
+noise deph_eta0.92_q0.99.json      S_up exact True  every CHSH <= 0.216894  tilted >= 0.220140  cone >= 0.233514  OK
+noise deph_eta0.92_q0.995.json     S_up exact True  every CHSH <= 0.218446  tilted >= 0.224419  cone >= 0.238248  OK
+noise wd_eta0.7515_q0.999-0.997.json S_up exact True  every CHSH <= 0.008739  tilted >= 0.008728  cone >= 0.008829  OK
+noise wd_eta0.755_q0.999-0.997.json S_up exact True  every CHSH <= 0.009868  tilted >= 0.009889  cone >= 0.010013  OK
+noise wd_eta0.763_q0.999-0.997.json S_up exact True  every CHSH <= 0.012760  tilted >= 0.012873  cone >= 0.013064  OK
+noise wd_eta0.774_q0.99-1.0.json   S_up exact True  every CHSH <= 0.010907  tilted >= 0.011172  cone >= 0.011300  OK
+noise wd_eta0.7865_q0.995-0.99.json S_up exact True  every CHSH <= 0.020746  tilted >= 0.019852  cone >= 0.020215  OK
+noise wd_eta0.841_q0.994-0.991.json S_up exact True  every CHSH <= 0.064497  tilted >= 0.064849  cone >= 0.067228  OK
+noise wd_eta0.8749_q0.9936-1.0.json S_up exact True  every CHSH <= 0.111332  tilted >= 0.116178  cone >= 0.121833  OK
+noise wd_eta0.8749_q1.0-0.9768.json S_up exact True  every CHSH <= 0.115502  tilted >= 0.112499  cone >= 0.118035  OK
+noise white_eta0.76_q0.98.json     S_up exact True  every CHSH <= 0.000000  tilted >= 0.000000  cone >= 0.000000  OK
+noise white_eta0.76_q0.985.json    S_up exact True  every CHSH <= 0.001749  tilted >= 0.001757  cone >= 0.001761  OK
+noise white_eta0.76_q0.99.json     S_up exact True  every CHSH <= 0.005250  tilted >= 0.005332  cone >= 0.005367  OK
+noise white_eta0.76_q0.995.json    S_up exact True  every CHSH <= 0.008795  tilted >= 0.009035  cone >= 0.009132  OK
+noise white_eta0.84_q0.93.json     S_up exact True  every CHSH <= 0.008812  tilted >= 0.008854  cone >= 0.008899  OK
+noise white_eta0.84_q0.94.json     S_up exact True  every CHSH <= 0.016806  tilted >= 0.016964  cone >= 0.017128  OK
+noise white_eta0.84_q0.95.json     S_up exact True  every CHSH <= 0.025023  tilted >= 0.025384  cone >= 0.025748  OK
+noise white_eta0.84_q0.96.json     S_up exact True  every CHSH <= 0.033471  tilted >= 0.034142  cone >= 0.034797  OK
+noise white_eta0.84_q0.97.json     S_up exact True  every CHSH <= 0.042161  tilted >= 0.043270  cone >= 0.044319  OK
+noise white_eta0.84_q0.98.json     S_up exact True  every CHSH <= 0.051104  tilted >= 0.052810  cone >= 0.054371  OK
+noise white_eta0.84_q0.99.json     S_up exact True  every CHSH <= 0.060314  tilted >= 0.062817  cone >= 0.065027  OK
+noise white_eta0.84_q0.995.json    S_up exact True  every CHSH <= 0.065022  tilted >= 0.068017  cone >= 0.070613  OK
+noise white_eta0.88_q0.88.json     S_up exact True  every CHSH <= 0.006590  tilted >= 0.006600  cone >= 0.006590  OK
+noise white_eta0.88_q0.9.json      S_up exact True  every CHSH <= 0.023762  tilted >= 0.023901  cone >= 0.024127  OK
+noise white_eta0.88_q0.92.json     S_up exact True  every CHSH <= 0.041981  tilted >= 0.042437  cone >= 0.043145  OK
+noise white_eta0.88_q0.93.json     S_up exact True  every CHSH <= 0.051515  tilted >= 0.052224  cone >= 0.053294  OK
+noise white_eta0.88_q0.94.json     S_up exact True  every CHSH <= 0.061351  tilted >= 0.062393  cone >= 0.063919  OK
+noise white_eta0.88_q0.95.json     S_up exact True  every CHSH <= 0.071507  tilted >= 0.072977  cone >= 0.075066  OK
+noise white_eta0.88_q0.96.json     S_up exact True  every CHSH <= 0.081999  tilted >= 0.084014  cone >= 0.086787  OK
+noise white_eta0.88_q0.97.json     S_up exact True  every CHSH <= 0.092848  tilted >= 0.095553  cone >= 0.099150  OK
+noise white_eta0.88_q0.98.json     S_up exact True  every CHSH <= 0.104074  tilted >= 0.107653  cone >= 0.112241  OK
+noise white_eta0.88_q0.99.json     S_up exact True  every CHSH <= 0.115701  tilted >= 0.120388  cone >= 0.126172  OK
+noise white_eta0.88_q0.995.json    S_up exact True  every CHSH <= 0.121673  tilted >= 0.127024  cone >= 0.133499  OK
+noise white_eta0.8_q0.93.json      S_up exact True  every CHSH <= 0.000000  tilted >= 0.000000  cone >= 0.000000  OK
+noise white_eta0.8_q0.94.json      S_up exact True  every CHSH <= 0.000000  tilted >= 0.000000  cone >= 0.000000  OK
+noise white_eta0.8_q0.95.json      S_up exact True  every CHSH <= 0.000000  tilted >= 0.000000  cone >= 0.000000  OK
+noise white_eta0.8_q0.958.json     S_up exact True  every CHSH <= 0.001200  tilted >= 0.001201  cone >= 0.001200  OK
+noise white_eta0.8_q0.96.json      S_up exact True  every CHSH <= 0.002657  tilted >= 0.002666  cone >= 0.002658  OK
+noise white_eta0.8_q0.97.json      S_up exact True  every CHSH <= 0.010059  tilted >= 0.010183  cone >= 0.010267  OK
+noise white_eta0.8_q0.98.json      S_up exact True  every CHSH <= 0.017652  tilted >= 0.018054  cone >= 0.018314  OK
+noise white_eta0.8_q0.99.json      S_up exact True  every CHSH <= 0.025444  tilted >= 0.026328  cone >= 0.026876  OK
+noise white_eta0.8_q0.995.json     S_up exact True  every CHSH <= 0.029418  tilted >= 0.030637  cone >= 0.031378  OK
+noise white_eta0.92_q0.93.json     S_up exact True  every CHSH <= 0.116403  tilted >= 0.117973  cone >= 0.121466  OK
+noise white_eta0.92_q0.94.json     S_up exact True  every CHSH <= 0.129380  tilted >= 0.131411  cone >= 0.135755  OK
+noise white_eta0.92_q0.95.json     S_up exact True  every CHSH <= 0.142887  tilted >= 0.145490  cone >= 0.150838  OK
+noise white_eta0.92_q0.96.json     S_up exact True  every CHSH <= 0.156965  tilted >= 0.160284  cone >= 0.166816  OK
+noise white_eta0.92_q0.97.json     S_up exact True  every CHSH <= 0.171659  tilted >= 0.175878  cone >= 0.183852  OK
+noise white_eta0.92_q0.98.json     S_up exact True  every CHSH <= 0.187023  tilted >= 0.192385  cone >= 0.202052  OK
+noise white_eta0.92_q0.99.json     S_up exact True  every CHSH <= 0.203115  tilted >= 0.209949  cone >= 0.221677  OK
+noise white_eta0.92_q0.995.json    S_up exact True  every CHSH <= 0.211456  tilted >= 0.219187  cone >= 0.232126  OK
+ALL OK = True (119 files)

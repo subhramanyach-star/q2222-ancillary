@@ -1,0 +1,18 @@
+--- (1) faces / exposure ingredients (exact in K) ---
+Lemma tools(d): active directions determine z (8x8 system nonsingular): True  det = 32*s**2/(s**2 + 1)
+triangle conv{p,L,L'} for V1 : (alpha0,alpha1)-minor = 2*C - 2
+triangle conv{p,L,L'} for V2 : (alpha0,alpha1)-minor = 2 - 2*C
+triangle conv{p,L,L'} for V1s: (alpha0,alpha1)-minor = 2 - 2*C
+triangle conv{p,L,L'} for V3 : (alpha0,alpha1)-minor = -2*C
+triangle conv{p,L,L'} for V4 : (alpha0,alpha1)-minor = 2*C + 2
+triangle conv{p,L,L'} for V3s: (alpha0,alpha1)-minor = 2*C
+--- (2)/(3) numerical spot checks ---
+V1 theta=0.1250 pi c0=0.3333: primal h_Kc0 = 1.0000000000, Phi(delta(c0)) = 1.0000000000
+V1 theta=0.1562 pi c0=0.1825: primal h_Kc0 = 1.0000000000, Phi(delta(c0)) = 1.0000000000
+V1 theta=0.1875 pi c0=0.0790: primal h_Kc0 = 1.0000000000, Phi(delta(c0)) = 1.0000000000
+V3 theta=0.1250 pi c0=0.3333: primal h_Kc0 = 1.0000000000, Phi(delta(c0)) = 1.0000000000
+V3 theta=0.1562 pi c0=0.1825: primal h_Kc0 = 1.0000000000, Phi(delta(c0)) = 1.0000000000
+V3 theta=0.1875 pi c0=0.0790: primal h_Kc0 = 1.0000000000, Phi(delta(c0)) = 1.0000000000
+max over spot grid of primal - Phi (must be <= ~1e-8): 4.368727601899991e-13
+max Phi on grid (must be <= 1): 0.9999999999999991
+max |Phi(sigma g, swap delta) - Phi(g, delta)| : 2.220446049250313e-16

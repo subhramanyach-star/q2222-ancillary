@@ -1,0 +1,25 @@
+tgen c_V3t.json vertex=V3 prec=100 tstrips [4]
+   strip 4: 7008 acc 5000 split; at c=[-0.9453125,-0.9375] t=[0.0156521,0.0156531] pair 3 why c
+   strip 4: 12014 acc 10000 split; at c=[-1,-0.99902344] t=[0.0158624,0.0158625] pair 2 why r
+   strip 4: 17015 acc 15000 split; at c=[-0.99951172,-0.99902344] t=[0.0158507,0.0158508] pair 2 why r
+   strip 4: 22016 acc 20000 split; at c=[-0.9921875,-0.984375] t=[0.0158386,0.0158391] pair 2 why r
+   strip 4: 27018 acc 25000 split; at c=[-0.98828125,-0.984375] t=[0.0158265,0.0158268] pair 2 why r
+   strip 4: 32016 acc 30000 split; at c=[-0.99414062,-0.9921875] t=[0.0158157,0.0158159] pair 2 why r
+   strip 4: 37020 acc 35000 split; at c=[-0.99609375,-0.99414062] t=[0.0158039,0.015804] pair 2 why r
+   strip 4: 42020 acc 40000 split; at c=[-0.99804688,-0.99707031] t=[0.0157925,0.0157926] pair 2 why r
+   strip 4: 47024 acc 45000 split; at c=[-1,-0.99804688] t=[0.0157807,0.015781] pair 2 why r
+   strip 4: 52022 acc 50000 split; at c=[-0.99902344,-0.99853516] t=[0.0157693,0.0157693] pair 2 why r
+   strip 4: 57024 acc 55000 split; at c=[-0.99951172,-0.99902344] t=[0.0157577,0.0157577] pair 2 why r
+   strip 4: 62025 acc 60000 split; at c=[-0.99951172,-0.99902344] t=[0.015746,0.015746] pair 2 why r
+   strip 4: 67026 acc 65000 split; at c=[-0.99853516,-0.99804688] t=[0.0157343,0.0157344] pair 2 why r
+   strip 4: 72030 acc 70000 split; at c=[-0.99902344,-0.99853516] t=[0.0157226,0.0157227] pair 2 why r
+   strip 4: 77030 acc 75000 split; at c=[-0.99926758,-0.99902344] t=[0.015711,0.0157111] pair 2 why c
+   strip 4: 82033 acc 80000 split; at c=[-0.99951172,-0.99926758] t=[0.0156994,0.0156994] pair 2 why c
+   strip 4: 87036 acc 85000 split; at c=[-0.99804688,-0.99609375] t=[0.0156875,0.0156876] pair 2 why r
+   strip 4: 92036 acc 90000 split; at c=[-0.99902344,-0.99804688] t=[0.015676,0.0156761] pair 2 why r
+   strip 4: 97036 acc 95000 split; at c=[-0.99853516,-0.99804688] t=[0.0156644,0.0156644] pair 2 why r
+   strip 4: 102036 acc 100000 split; at c=[-0.99926758,-0.99902344] t=[0.0156528,0.0156529] pair 2 why c
+   strip 4: 107041 acc 105000 split; at c=[-0.99951172,-0.99902344] t=[0.0156411,0.0156411] pair 2 why r
+   strip 4: 112042 acc 110000 split; at c=[-0.99902344,-0.99853516] t=[0.0156294,0.0156295] pair 2 why r
+  done tstrip 4: {'ok': True, 'nboxes': 113920, 'nsplit': 111872, 'endpoint_boxes': 512, 'tests': {'T0': 331696, 'T3+': 32, 'T1': 682, 'T2': 310, 'T0d': 118864, 'E-': 4096}} (266s)
+RESULT c_V3t.json: ALL OK = True ; 113920 boxes ; 266.4s

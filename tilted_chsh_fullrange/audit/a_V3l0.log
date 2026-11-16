@@ -1,0 +1,3 @@
+vgen c_V3l.json vertex=V3 pins={} prec=120 strips 0..0
+strip   0 x in [1/16, 17/256] (theta/pi ~ [0.062500, 0.066406]): {'ok': True, 'nboxes': 95491, 'endpoint_boxes': 512, 'tests': {'T0': 17334, 'T3+': 128, 'T1': 353060, 'T2': 10970, 'T3-': 472}}
+RESULT c_V3l.json: ALL OK = True ; 95491 boxes ; 151.7s

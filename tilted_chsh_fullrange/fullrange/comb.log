@@ -1,0 +1,19 @@
+s* in [0.9553125010256316, 0.9553125010256316] ~ 0.955312501025632 ; theta*/pi = [0.202240599769922 +/- 1.87e-16]
+== regime hex: open s-interval (0.0, 0.9553125010256316); exact facet identities; endpoints by Arb
+  V1    facets ('++++', '+--+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s=0': {'mu0': 0, 'L+++-': 0, 'L+-++': 0}, 's*': {'L-+--': 0}}
+  V2    facets ('+++-', '+--+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s=0': {'mu0': 0, 'mu1': 0, 'mu3': 0, 'L++++': 0, 'L++-+': 0, 'L++--': 0, 'L+-++': 0, 'L+-+-': 0, 'L+---': 0, 'L-++-': 0, 'L-+--': 0, 'L---+': 0, 'L----': 0}, 's*': {}}
+  V1s   facets ('+++-', '+-++'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s=0': {'mu0': 0, 'L++++': 0, 'L+--+': 0}, 's*': {'L----': 0}}
+  V3    facets ('+-++', '-++-'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s=0': {'mu0': 0, 'mu2': 0, 'L++++': 0, 'L+++-': 0, 'L+--+': 0, 'L-+++': 0, 'L--++': 0, 'L---+': 0}, 's*': {}}
+  V4    facets ('-++-', '---+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s=0': {'mu0': 0, 'mu1': 0, 'mu2': 0, 'mu3': 0, 'L++++': 0, 'L+++-': 0, 'L+-++': 0, 'L+--+': 0, 'L-+++': 0, 'L-+-+': 0, 'L-+--': 0, 'L--++': 0, 'L--+-': 0, 'L----': 0}, 's*': {}}
+  V3s   facets ('++++', '---+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s=0': {'mu0': 0, 'mu2': 0, 'L+++-': 0, 'L+-++': 0, 'L+--+': 0, 'L-+++': 0, 'L-++-': 0, 'L--++': 0}, 's*': {}}
+== regime oct: open s-interval (0.9553125010256316, 1.0); exact facet identities; endpoints by Arb
+  Wa    facets ('++++', '-+--'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {'L+--+': 0}, 's=1': {}}
+  Wb    facets ('+--+', '-+--'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {'L++++': 0}, 's=1': {}}
+  V2    facets ('+++-', '+--+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {}, 's=1': {}}
+  Wa_s  facets ('+++-', '----'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {'L+-++': 0}, 's=1': {}}
+  Wb_s  facets ('+-++', '----'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {'L+++-': 0}, 's=1': {}}
+  V3    facets ('+-++', '-++-'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {}, 's=1': {}}
+  V4    facets ('-++-', '---+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {}, 's=1': {}}
+  V3s   facets ('++++', '---+'): open-interval conditions all > 0: True  ; endpoint non-positive: {'s*': {}, 's=1': {}}
+ALL OK (open intervals): True 8.9s
+EXIT 0

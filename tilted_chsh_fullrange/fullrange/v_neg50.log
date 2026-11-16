@@ -1,0 +1,3 @@
+vgen c_Wa_neg50.json vertex=Wa pins={1: [1, 1]} prec=120 strips 0..0
+strip   0 x in [5653/25000, 22811/100000] (theta/pi ~ [0.226120, 0.228110]): {'ok': False, 'why': 'box', 'box': ['2147483647/2147483648', '1', '765410148153/3355443200000', '22811/100000']}
+RESULT c_Wa_neg50.json: ALL OK = False ; 0 boxes ; 0.1s

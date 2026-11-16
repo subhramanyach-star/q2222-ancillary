@@ -1,0 +1,9 @@
+eta 0.95: q, c0, cones active, 6 vertices re-derived exactly (exhaustive pair enumeration)
+  vertex 0 tight [(1, 1, 1, 1), (-1, 1, -1, -1)]: {'ok': True, 'nboxes': 75, 'tests': {'T3+': 2, 'T0': 185, 'T1': 103, 'T2': 10}, 'endpoint_min': '0'}
+  vertex 1 tight [(1, 1, 1, 1), (-1, -1, -1, 1)]: {'ok': True, 'nboxes': 89, 'tests': {'T3+': 1, 'T0': 192, 'T1': 148, 'T2': 14, 'T3-': 1}, 'endpoint_min': '0'}
+  vertex 2 tight [(1, 1, 1, -1), (1, -1, 1, 1)]: {'ok': True, 'nboxes': 89, 'tests': {'T0': 218, 'T3+': 1, 'T1': 128, 'T2': 8, 'T3-': 1}, 'endpoint_min': '0'}
+  vertex 3 tight [(1, 1, 1, -1), (1, -1, -1, 1)]: {'ok': True, 'nboxes': 89, 'tests': {'T0': 186, 'T1': 157, 'T2': 11, 'T3-': 2}, 'endpoint_min': '0'}
+  vertex 4 tight [(1, -1, 1, 1), (-1, -1, -1, 1)]: {'ok': True, 'nboxes': 92, 'tests': {'T0': 191, 'T3+': 1, 'T1': 161, 'T2': 14, 'T3-': 1}, 'endpoint_min': '0'}
+  vertex 5 tight [(1, -1, -1, 1), (-1, 1, -1, -1)]: {'ok': True, 'nboxes': 108, 'tests': {'T0': 194, 'T3+': 1, 'T1': 227, 'T2': 9, 'T3-': 1}, 'endpoint_min': '0'}
+eta 0.95 done in 0.9s
+RESULT ALL OK = True

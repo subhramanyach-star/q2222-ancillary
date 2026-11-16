@@ -1,0 +1,3 @@
+vgen c_V3h.json vertex=V3 pins={} prec=120 strips 23..23
+strip  23 x in [95/384, 1/4] (theta/pi ~ [0.247396, 0.250000]): {'ok': True, 'nboxes': 3558, 'endpoint_boxes': 8, 'tests': {'T0': 7758, 'T3+': 61, 'T1': 5581, 'T2': 768, 'T3-': 64}}
+RESULT c_V3h.json: ALL OK = True ; 3558 boxes ; 5.6s
