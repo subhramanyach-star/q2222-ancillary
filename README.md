@@ -22,6 +22,7 @@ Run every command from the root of this repository, or from the directory named 
 
 ```
 python3 lossycone/vpt_t4.py
+python3 lossycone/vpt.py
 python3 lossycone/verify_t4_rates.py
 python3 lossycone/verify_t4_attack.py
 python3 chsh_variants/verify_variants.py
@@ -29,7 +30,7 @@ python3 rigorous_rates/test_certified_float.py
 python3 lossycone/tamper.py
 ```
 
-Each command should exit with status 0. The first four print a final `RESULT ALL OK = True` or `ALL OK = True` line; the rounding test prints `certified_float unit check: ALL OK`; the last command checks that a tampered cone certificate is rejected.
+Each command should exit with status 0. The first five print a final `RESULT ALL OK = True` or `ALL OK = True` line; the rounding test prints `certified_float unit check: ALL OK`; the last command prints `RESULT TAMPER ALL OK = True` after accepting an unperturbed cone certificate and rejecting every perturbation.
 
 The cone check accepts 112 efficiencies and 656 vertices. The rate and attack checks certify the selected-expression intervals in the paper and the guaranteed gains on every subinterval of \([0.75,0.98]\). The variant check confirms that the remaining CHSH sign class lies a certified gap of at least \(3.19\times 10^{-3}\) below the canonical CHSH maximum at every grid point.
 
@@ -53,7 +54,8 @@ Further strip and small-angle checks are listed in `MANIFEST.md`. A vertex certi
 | directory | role |
 |---|---|
 | `lossycone/` | Supporting-cone and randomness-rate certificates under detection loss, at 112 efficiencies |
-| `lossycone/data/t4/` | One JSON certificate file for each efficiency |
+| `lossycone/data/points.json`, `lossycone/data/certs.json` | The six table-efficiency devices and their cone certificates |
+| `lossycone/data/t4/` | One JSON certificate file for each of the 112 efficiencies |
 | `chsh_variants/` | Certificates for the remaining CHSH sign class |
 | `tilted_chsh/`, `tilted_chsh_fullrange/`, `tsirelson_octagon/` | Supporting-polygon certificates for the tilted-CHSH family, including the Tsirelson octagon at maximal entanglement |
 | `rigorous_rates/` | Library modules used by the rate and variant verifiers (interval arithmetic and exact identities) |
